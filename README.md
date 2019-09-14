@@ -2,11 +2,11 @@
 _<small><small>(Although this team's name is one, they understand that there are likely multiple etiologies for NF, and will tease them out!)</small>_</small>
 
 
-## GOAL: 
+## Goal: 
 Our goal is to classify and predict responses to a drug based on features like X, Y, Z. We then aimed to correlate the drug targets with relevance in gene expression (RNA-seq) and patient genotypes (WGS) @icon-fas-fa-flask
 
 ---
-#### members
+## members
 
 |   |   |   |   |   |   |
 |:------:|:------:|:------:|:------:|:-------:|:------:|
@@ -17,7 +17,7 @@ Our goal is to classify and predict responses to a drug based on features like X
 
 ---
 
-### What is Neurofibromatosis? 
+##   What is Neurofibromatosis? 
 
 Neurofibromatosis is a set of three genetic conditions that cause tumors to grow throughout the body. It is automsomal dominant, though about half of all cases occur due to a random mutation.
 
@@ -80,20 +80,21 @@ To generate this data, we combined compound/drug screens from multiple different
 ## steps 
 
 ##### 1. Parsing drug screen data and drug metadata into vectors for a model
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 
 ##### 2. Create off-the-shelf machine learning models as well as a simple multi-layer perceptron
-
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
 
 ##### 3. Interpretint the results
-
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
 
 ##### 4. Correlate the gene targets of drugs with their relevance in RNA-seq and WGS data 
-
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
 
 ---
 
-## methods used
+## methods used 
 
 ---
 
