@@ -1,13 +1,17 @@
 # teamone
-_Although this team's name is one, they understand that there are likely multiple etiologies for NF, and will tease them out!_
+_<small><small>(Although this team's name is one, they understand that there are likely multiple etiologies for NF, and will tease them out!)</small>_</small>
 
----
 
 ## GOAL: 
-Our goal is to classify and predict responses to a drug based on features like X, Y, Z. We then aimed to correlate the drug targets with relevance in gene expression (RNA-seq) and patient genotypes (WGS) @icon-fa-flask
+Our goal is to classify and predict responses to a drug based on features like X, Y, Z. We then aimed to correlate the drug targets with relevance in gene expression (RNA-seq) and patient genotypes (WGS) @icon-fas-fa-flask
 
+---
+#### members
 
-
+|   |   |   |   |   |   |
+|:------:|:------:|:------:|:------:|:-------:|:------:|
+|<a href="https://github.com/jacquelinevaleri"><img width=80 src="https://avatars2.githubusercontent.com/u/48304084?s=460&v=4"><br>@jacquelinevaleri</a> <br> Jackie Valeri |<a href="https://github.com/0916kj"><img width=80 src ="https://avatars3.githubusercontent.com/u/41515657?s=460&v=4"><br> @0916kj </a> <br> Kate James |<a href="https://github.com/jzwlin"><img width=80 src="https://avatars2.githubusercontent.com/u/21243979?s=460&v=4"> <br>@jzwlin </a> <br> Wanlin Zheng|<a href="https://github.com/cchristina"> <img width=80 src="https://avatars0.githubusercontent.com/u/3009984?s=460&v=4"> <br>@cchristina </a><br> Christina Cuneo |<a href=""><img width=80 src="https://image.shutterstock.com/image-vector/user-account-profile-circle-flat-260nw-467503004.jpg"> <br> @blaaaaaah </a><br> name name |<a href=""><img width=80 src="https://image.shutterstock.com/image-vector/user-account-profile-circle-flat-260nw-467503004.jpg"> <br> @blaaaaaah </a><br> name name |
+|   |   |   |   |   |   |
 
 
 
@@ -86,3 +90,24 @@ To generate this data, we combined compound/drug screens from multiple different
 
 ##### 4. Correlate the gene targets of drugs with their relevance in RNA-seq and WGS data 
 
+
+---
+
+## methods used
+
+---
+
+## tech stack
+
+---
+
+## results / viz
+
+---
+
+
+---
+
+## Acknowledgements
+
+Huge thank you to CTF, Sage,  SVAI, NTAP, uuhhh, google launchpad?
