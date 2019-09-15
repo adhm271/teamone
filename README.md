@@ -51,6 +51,19 @@ Charge -- Total formal charge
 
 ##### 3. We create off-the-shelf machine learning models as well as a simple multi-layer perceptron
 
+For all models, a 70%/30% train/test split was used on the data. Each of the 1784 drug responses were evaluated on the 6 cell lines available for both AUC and Max Resp.
+
+Random Forest Classifier: 1000 decision trees aggregated to predict and classify the AUC and Max Resp, individually. Gini purity was used to evaluate the decision tree validity and bootstrapping was used to make sure the model was not overfit on the data.
+
+K-Nearest Neighbors Classifier: A classifier and regressor was built to aggregate information from the 5 nearest neighbors, with the BallTree algorithm (according to sklearn documentation, the BallTree for fast generalized N-point problems). Minkowski distance was used to calculate similarity of neighbors in the data.
+
+MLP: Three fully connected layers were built, with 15, 10, and 6 nodes, respectively. ReLu activation was used after each layer except the last, which had a linear activation function. The Adam optimizer was used with MSE as the loss function. Batches of 20 drugs at a time were fed into the model for optimization over 100 epochs. Accuracy, MSE, and MAE were recorded over time.
+
+##### 4. Correlate the gene targets of drugs with their relevance in RNA-seq and WGS data 
+>`Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia `
+
+## Results *: What did we observe? Figures are great!*
+
 __regression__
 
 
@@ -217,12 +230,6 @@ def whatever(lst):
 </td>
 </tr>
 </table>
-`
-
-##### 4. Correlate the gene targets of drugs with their relevance in RNA-seq and WGS data 
->`Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia `
-
-## Results *: What did we observe? Figures are great!*
 
 ## Conclusion/Discussion: 
 
@@ -253,90 +260,11 @@ Instructions for running the following notebooks: *be sure to adjust these instr
 ---
 ## members
 
+|   |   |   |   |   |   |
+|:------:|:------:|:------:|:------:|:-------:|:------:|
+|<a href="https://github.com/jackievaleri"><img width=80 src="https://avatars3.githubusercontent.com/u/33818756?s=460&v=4"><br>@jackievaleri</a> <br> Jackie Valeri |<a href="https://github.com/0916kj"><img width=80 src ="https://avatars3.githubusercontent.com/u/41515657?s=460&v=4"><br> @0916kj </a> <br> Kate James |<a href="https://github.com/jzwlin"><img width=80 src="https://avatars2.githubusercontent.com/u/21243979?s=460&v=4"> <br>@jzwlin </a> <br> Wanlin Zheng|<a href="https://github.com/cchristina"> <img width=80 src="https://avatars0.githubusercontent.com/u/3009984?s=460&v=4"> <br>@cchristina </a><br> Christina Cuneo |<a href=""><img width=80 src="https://image.shutterstock.com/image-vector/user-account-profile-circle-flat-260nw-467503004.jpg"> <br> @AAR0NM </a><br> Aaron M |<a href=""><img width=80 src="https://avatars0.githubusercontent.com/u/55332666?s=460&v=4"> <br> @joebvirtual </a><br> Joe B Virtual |
+|   |   |   |   |   |   |
 
-
-
-<table>
-<tr>
-<td>
-<a href="https://github.com/jackievaleri"><img width=80 src="https://avatars3.githubusercontent.com/u/33818756?s=460&v=4"></a>
-</td>
-
-<td>
-    <a href="https://github.com/0916kj"><img width=80 src ="https://avatars3.githubusercontent.com/u/41515657?s=460&v=4"></a>
-</td>
-
-<td>
-<a href="https://github.com/jzwlin"><img width=80 src="https://avatars2.githubusercontent.com/u/21243979?s=460&v=4"> </a> 
-</td>
-
-<td>
-<a href="https://github.com/cchristina"> <img width=80 src="https://avatars0.githubusercontent.com/u/3009984?s=460&v=4"> </a>
-</td>
-
-<td>
-<a href=""><img width=80 src="https://image.shutterstock.com/image-vector/user-account-profile-circle-flat-260nw-467503004.jpg"> </a>
-</td>
-
-<td><a href="https://github.com/JoeBVirtual"><img width=80 src="https://avatars0.githubusercontent.com/u/55332666?s=460&v=4"></a>
-
-
-</tr>
-
-<tr>
-<td>
-@jackievaleri
-</td>
-
-<td>
-@0916kj
-</td>
-
-<td>
-@jzwlin  
-</td>
-
-<td>
-@cchristin
-</td>
-
-<td>
-@AAR0NM </td>
-
-<td>
-@JoeBVirtual
-</td>
-
-</tr>
-
-<tr>
-<td>
-Jackie Valeri
-</td>
-<td>
-Kate James
-</td>
-<td>
-Wanlin Zheng
-</td>
-
-<td>
-Christina Cuneo
-</td>
-
-<td>
-Aaron M
-</td>
-
-<td>
-Joe B Virtual
-
-</td>
-
-</tr>
-
-
-</table>
 
 
 ---
@@ -406,70 +334,16 @@ To generate this data, we combined compound/drug screens from multiple different
 
 --- -->
 
-## Tools et cetera
-<table>
-<tr>
-<td>
-<img width=100 src="./static/images/acknowledgements/GoogleCloud.png">
-</td>
-<td>
-<img width=100 src="./static/images/acknowledgements/jupyter.png">
-</td>
-<td>
-<img width=100 src="./static/images/acknowledgements/vscode.png">
-</td>
-
-<td>
-<img width=100 src="./static/images/acknowledgements/docker.png">
-</td>
-</tr>
-<tr>
-<td>
-<img width=100 src="./static/images/acknowledgements/slacknew.png">
-</td>
-
-<tr>
-
-</table>
-
 
 ## Acknowledgements
 
 #
 Huge thank you to CTF, Sage,  SVAI, NTAP, uuhhh, google launchpad?
 
-<table>
-<tr>
-<td>
-<img width=100 src="./static/images/acknowledgements/ctf.png">
-</td>
-<td>
-<img width=100 src="./static/images/acknowledgements/sage.png">
-</td>
-<td>
-<img width=100 src="./static/images/acknowledgements/svai.png">
-</td>
-<td>
-<img width=100 src="./static/images/acknowledgements/ntap.png">|
-</td>
-</tr>
-<td>
-<img width=100 src="./static/images/acknowledgements/GoogleLaunchpad.png">
-</td>
-<td>
-<img width=100 src="./static/images/acknowledgements/GoogleCloud.png">
-</td>
-<td>
-<img width=100 src="./static/images/acknowledgements/healx.png">
-</td>
-<td>
-<img width=100 src="./static/images/acknowledgements/wuxiapp.png">
-</td>
-</tr>
-
-</table>
-
-
+|   |   |   |   |   |   |
+|:------:|:------:|:------:|:------:|:-------:|:------:|
+|<img width=100 src="./static/images/acknowledgements/ctf.png">|<img width=100 src="./static/images/acknowledgements/sage.png">|<img width=100 src="./static/images/acknowledgements/svai.png">|<img width=100 src="./static/images/acknowledgements/GoogleCloud.png">|<img width=100 src="./static/images/acknowledgements/GoogleLaunchpad.png">|<img width=100 src="./static/images/acknowledgements/ntap.png">|
+|<img width=100 src="./static/images/acknowledgements/healx.png">|<img width=100 src="./static/images/acknowledgements/wuxiapp.png">|<img width=100 src="./static/images/acknowledgements/wuxinext.png">|<img width=100 src="./static/images/acknowledgements/vscode.png">|<img width=100 src="./static/images/acknowledgements/docker.png">|
 
 
 ---
