@@ -64,8 +64,7 @@ K-Nearest Neighbors Classifier: A classifier and regressor was built to aggregat
 MLP: Three fully connected layers were built, with 15, 10, and 6 nodes, respectively. ReLu activation was used after each layer except the last, which had a linear activation function. The Adam optimizer was used with MSE as the loss function. Batches of 20 drugs at a time were fed into the model for optimization over 100 epochs. Accuracy, MSE, and MAE were recorded over time.
 
 
-##### 4. Correlate the gene targets of drugs with their relevance in RNA-seq and WGS data 
->`Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia `
+##### 4. Correlate the gene targets of drugs with their relevance in genomic data
 
 ---
 
@@ -224,7 +223,16 @@ Since complexity, TPSA, and XLOGP seemed like the most important features, we vi
 </tr>
 </table>
 `
+__SNP Exploration__
+We investigated the SNPs for NF1 patients for the top ~50 or so drug targets when classified by AUC. There were 14 unique drug targets from the top drugs, and we plotted the skin (inner circle) cNF SNPs versus the blood (outer circle) 'normal' non-tumor SNPs.
 
+<table allign="center">
+    <tr>
+    <td>
+        <img alt="feature_importance" src="./static/images/snps_in_top_drug_targets.jpeg"><br><em>r2</em>
+    </td>
+    </tr>
+    </table>
 ---
 
 ## Conclusion/Discussion: 
