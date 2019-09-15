@@ -268,16 +268,19 @@ We investigated the SNPs for NF1 patients for the top ~50 or so drug targets whe
 
 ## Conclusion/Discussion:
 
+In conclusion, we made three simple models to predict and classify the drug performance on 6 cell lines. To expand the investigation and improve the accuracy, we would want the following additional data: 
 
-### Please make sure you address ALL of the following:
+1) more cell lines- we only used data from 6 cell lines here, all NF2 deficient; 
 
-#### *1. What additional data would you like to have*
+2) more drug structural information- it would be interesting to identify other features, such as one-hot encode the drug structure, and include data from additional databases outside of PubChem
 
-#### *2. What are the next rational steps?* 
+3) more performance metrics- we only measured the AUC and maximum response, but we would also want to explore AC50 and cell proliferation in these assays
 
-#### *3. What additional tools or pipelines will be needed for those steps?*
+Additionally, we only had genotype information from NF1 patients, and the drugs were screened on NF2 deficient cell lines. We are aware of this limitation, but the analysis could be expanded to whole genome sequencing information from NF2 patients when available. 
 
-#### *4. What skills would additional collaborators ideally have?*
+The next rational steps would be to expand the scope of this analysis. Given more time, we would want to more directly correlate the drug targets with their performance in the screens, and do a pathway analysis of each drug target. Furthermore, it would be interesting to access the genotypes of the cell lines to see if differential performance on different cell lines is affected by any explicit genotype information. 
+
+Our ideal pipeline would take a full set of 38 cell lines tested with all ~1950 drugs, with many different measured outputs. We would take this dataset and for each drug, extract as many structural features as possible, from the chemical formula of the drug to its solubility. Then, we would test the features' predictive abilities via several different models, possibly using an ensemble model to incorporate the different advantages of the models. Our ideal collaborator would have the ability to generate an expanded dataset as well as collect WGS information from NF2 patients. 
 
 ---
 
@@ -287,6 +290,7 @@ We investigated the SNPs for NF1 patients for the top ~50 or so drug targets whe
 
 ## Reproduction:
 
+Just run the jupyter notebooks in the github. All data extraction, visualization, and modeling scripts are included. Do note that the PubChemPy drug information extraction takes a long time to run.
 
 ### Docker
 
