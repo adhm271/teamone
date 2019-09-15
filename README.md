@@ -12,7 +12,7 @@
 <a href="https://github.com/SVAI/teamone#Acknowledgements">Acknowledgements </a>
 |
 
-<img src="./static/images/templogo.png">
+<center><img src="./static/images/templogo.gif"></center>
 
 ---
 
