@@ -472,8 +472,16 @@ Kim S, Chen J, Cheng T, Gindulyte A, He J, He S, Li Q, Shoemaker BA, Thiessen PA
 <img width=100 src="./static/images/acknowledgements/pandas.png">
 </td>
 
-<tr>
+</tr>
 
+<tr>
+<td>
+<img width=100 src="./static/images/acknowledgements/dplyr.png">
+</td>
+<td>
+<img width=100 src="./static/images/acknowledgements/rstudio.png">
+
+</td>
 </table>
 
 ---
