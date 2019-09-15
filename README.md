@@ -27,7 +27,19 @@ Modern high-throughput drug screens are useful for testing out drugs in vitro be
 ##### 1. Parsing drug screen data and drug metadata into vectors for a model
 >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 
-
+We examined several structural properties of the drugs as reported by PubChem:
+MolecularWeight -- Calculated molecular weight in units g/mol.
+XLogP -- Log P calculated using XLogP method
+HBD -- Count of hydrogen bond donors
+HBA -- Count of hydrogen bond acceptors
+Rotatable Bond -- Count of rotatable bonds
+TPSA -- Polar surface area calculated using topological polar surface area method
+Heavy Atom -- Count of heavy atoms, i.e., being those other than hydrogen atoms
+Isotope -- Count of atoms with specified isotopic atom labels
+Tautomer -- Count of unique tautomeric forms (to a maximum of 1,000).
+Covalent Unit -- Count of covalently bonded moieties within a CID
+Complexity -- Measure of structural complexity
+Charge -- Total formal charge
 
 ##### 2. Create off-the-shelf machine learning models as well as a simple multi-layer perceptron
 
