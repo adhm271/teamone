@@ -1,4 +1,7 @@
-#
+##### contents
+<div align="right">
+    <b><a href="#contents">↥ </a></b>
+</div>
 
 |
 <a href="https://github.com/SVAI/teamone#Abstract">Abstract</a> | 
@@ -17,16 +20,25 @@
 ---
 
 ## Abstract  
+<div align="right">
+    <b><a href="#contents">↥ </a></b>
+</div>
 
 To understand the results from the drug screening data, we wanted to see if any chemical or structural properties of the drugs themselves correlated with the screening. We analyzed features from ~1750 of the molecules in the screen via PubChem, exploring properties such as molecular weight, number of hydrogen bonds, total polar surface area, etc. We then used several off-the-shelf classifiers from sklearn, such as a Random Forest Classifier and KNN Classifier, to identify salient features and the predictive property of these molecules. We also looked at a very simple multi-layer perceptron to try to get an increased accuracy. These models were engineered for both regression and classification, with an improvement in accuracy in the classification models. The most important features of drugs contributing to differential AUC and Maximum Response were total polar surface area (TPSA), complexity, and xlogp. Finally, we extended the drug screening data to the top genes targeted by the highest-performing drugs, finding xxx in RNA-seq and xxx in WGS.
 
 ---
 
-## Introduction: <a href="#top">Back to top</a>
+## Introduction: 
+<div align="right">
+    <b><a href="#contents">↥ </a></b>
+</div>
 
 Modern high-throughput drug screens are useful for testing out drugs in vitro before executing more expensive, resource-intensive animal trials or human clinical trials. However, drug screen data is not always robust, and difficulties arise in translating results from the dish to an in vivo model. Given these challenges, we were interested in understanding if the chemical or structural properties of the drugs were driving their in vitro measured response. Since we wanted to classify and predict responses to a drug based on features like molecular weight and polarity, we looked at how these features correlated with the predictive ability of the three models we used. We then aimed to correlate the drug targets with relevance in gene expression (RNA-seq) and patient genotypes (WGS). 
 
 ## Methods:
+<div align="right">
+    <b><a href="#contents">↥ </a></b>
+</div>
 
 ##### 1. We looked at screening data across 1784 molecules and 6 different cell lines.
 
@@ -74,6 +86,9 @@ MLP: Three fully connected layers were built, with 15, 10, and 6 nodes, respecti
 ---
 
 ## Results:
+<div align="right">
+    <b><a href="#contents">↥ </a></b>
+</div>
 
 __Regression__
 We evaluated the R2, MAE, MSE, and Explained Variance for each KNN and Random Forest Classifier when trained to predict the continuous AUC and Max Response values for each of the 6 cell lines.
@@ -241,7 +256,10 @@ We investigated the SNPs for NF1 patients for the top ~50 or so drug targets whe
 
 ---
 
-## Conclusion/Discussion: 
+## Conclusion/Discussion:
+<div align="right">
+    <b><a href="#contents">↥ </a></b>
+</div> 
 
 ### Please make sure you address ALL of the following:
 
@@ -256,6 +274,9 @@ We investigated the SNPs for NF1 patients for the top ~50 or so drug targets whe
 ---
 
 ## Reproduction:
+<div align="right">
+    <b><a href="#contents">↥ </a></b>
+</div>
 
 ### Docker
 
@@ -273,6 +294,9 @@ Instructions for running the following notebooks: *be sure to adjust these instr
 
 ---
 ## Members
+<div align="right">
+    <b><a href="#contents">↥ </a></b>
+</div>
 
 
 
@@ -388,6 +412,10 @@ The Datasets used for the analyses described in this manuscript were generated b
 ---
 
 ## Tools Used
+<div align="right">
+    <b><a href="#contents">↥ </a></b>
+</div>
+
 <table>
 <tr>
 <td>
@@ -425,7 +453,7 @@ The Datasets used for the analyses described in this manuscript were generated b
 ---
 ## Acknowledgements 
 <div align="right">
-    <b><a href="#">↥ </a></b>
+    <b><a href="#contents">↥ </a></b>
 </div>
 
 Thank you so much for all parties that made this hackathon possible! 
