@@ -19,7 +19,7 @@ To understand the results from the drug screening data, we wanted to see if any 
 
 ## Introduction *: What's the problem? Why should we solve it?*
 
-Our goal is to classify and predict responses to a drug based on features like `_[X, Y, Z]_`. We then aimed to correlate the drug targets with relevance in gene expression (RNA-seq) and patient genotypes (WGS) 
+Modern high-throughput drug screens are useful for testing out drugs in vitro before executing more expensive, resource-intensive animal trials or human clinical trials. However, drug screen data is not always robust, and difficulties arise in translating results from the dish to an in vivo model. Given these challenges, we were interested in understanding if the chemical or structural properties of the drugs were driving their in vitro measured response. Since we wanted to classify and predict responses to a drug based on features like molecular weight and polarity, we looked at how these features correlated with the predictive ability of the three models we used. We then aimed to correlate the drug targets with relevance in gene expression (RNA-seq) and patient genotypes (WGS). 
 
 ## Methods *: How did we go about solving it?*
 
@@ -60,7 +60,7 @@ Our goal is to classify and predict responses to a drug based on features like `
 
 <tr>
 <td>
-<img width=350 src="./static/images/tree3crop.png">
+<img width=400 src="./static/images/tree3crop.png">
 <details>
   <summary>Expand to View Full Size! (warning: v big)</summary>
   
@@ -71,12 +71,12 @@ Our goal is to classify and predict responses to a drug based on features like `
 
 <td>
 
-<img width=350 src="./static/images/tree4crop.png">
+<img width=400 src="./static/images/tree4crop.png">
 <details>
   <summary>Expand to View Full Size! (warning: v big)</summary>
   
  <!-- <img width=400 src="./static/images/tree4.png"> -->
- <img src="./static/images/tree4.png">
+ <img width=350 src="./static/images/tree4.png">
 </details>
 </td>
 </tr>
