@@ -292,20 +292,16 @@ Our ideal pipeline would take a full set of 38 cell lines tested with all ~1950 
 
 ## Reproduction:
 
-Just run the jupyter notebooks in the github. All data extraction, visualization, and modeling scripts are included. Do note that the PubChemPy drug information extraction takes a long time to run.
+Run the jupyter notebooks in the github. All data extraction, visualization, and modeling scripts are included. Do note that the PubChemPy drug information extraction takes a long time to run.
 
 ### Docker
 
-#TODO
-
-*The Docker image contains <R/jupyter> notebooks of all analyses and the dependencies to run them. *Be sure to note if you need any special credentials to access data for these analyses, **don't package restricted data** in your containers!*
+*The Docker image contains a jupyter notebook of drug clustering analysis and the dependencies to run them. There are no special credentials needed to access data for these analyses.
 
 Instructions for running the following notebooks: *be sure to adjust these instructions as necessary! check out https://github.com/Sage-Bionetworks/nf-hackathon-2019 for example containers and instructions*
 
 1. `docker pull <your dockerhub repo>/<this container>` command to pull the image from the DockerHub
 2. `docker run <your dockerhub repo>/<this container>` Run the docker image from the master shell script
-
-<!-- ### Important Resources *: primary data, github repository, Synapse project, dockerfile link etc.* -->
 
 
 ---
@@ -431,8 +427,6 @@ The Datasets used for the analyses described in this manuscript were generated b
 
 
 Kim S, Chen J, Cheng T, Gindulyte A, He J, He S, Li Q, Shoemaker BA, Thiessen PA, Yu B, Zaslavsky L, Zhang J, Bolton EE. PubChem 2019 update: improved access to chemical data. Nucleic Acids Res. 2019 Jan 8; 47(D1):D1102-1109. doi:10.1093/nar/gky1033. [PubMed PMID: 30371825] 
-
-#TODO: Link to DOI, ICJME standard citation
 
 ---
 
