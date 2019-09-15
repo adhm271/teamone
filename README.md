@@ -1,24 +1,76 @@
-# GoodDocData -- A Template for Simple and Clear Documentation of Hackathon Analyses!
+# HACKNF2 – teamone
 
-*adapted from [NCBI-Hackathons/GoodDoc](https://github.com/NCBI-Hackathons/GoodDoc) with some tweaks for analysis-driven projects*
-
-*instructions in italics can be deleted as sections are filled in*
-
-*most fields are optional, Conclusion and Important Resources are required*
 
 ## Please cite our work -- here is the ICMJE Standard Citation:
 
 ### ...and a link to the DOI: *You can make a free DOI with zenodo, synapse, figshare, or other resources <link>*
 
-## Awesome Logo *(if applicable)*
+<!-- ## Awesome Logo *(if applicable)* -->
+
+<img src="./static/images/templogo.png">
 
 ## Website *(if applicable)*
 
+
 ## Abstract *: Summarize everything in a few sentences.* 
+
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+
+
 
 ## Introduction *: What's the problem? Why should we solve it?*
 
+Our goal is to classify and predict responses to a drug based on features like _[X, Y, Z]_. We then aimed to correlate the drug targets with relevance in gene expression (RNA-seq) and patient genotypes (WGS) 
+
 ## Methods *: How did we go about solving it?*
+
+
+##### 1. Parsing drug screen data and drug metadata into vectors for a model
+>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+
+
+##### 2. Create off-the-shelf machine learning models as well as a simple multi-layer perceptron
+>Decision tree stuff~
+
+
+
+
+<img width=400 src="./static/images/tree1crop.png">
+<details>
+  <summary>Expand to View Full Size! (warning: v big)</summary>
+  
+ <img width=400 src="./static/images/tree1.png">
+</details>
+
+<img width=400 src="./static/images/tree2crop.png">
+<details>
+  <summary>Expand to View Full Size! (warning: v big)</summary>
+  
+ <img width=400 src="./static/images/tree2.png">
+</details>
+
+
+<img width=400 src="./static/images/tree3crop.png">
+<details>
+  <summary>Expand to View Full Size! (warning: v big)</summary>
+  
+ <img width=400 src="./static/images/tree3.png">
+</details>
+
+
+<img width=400 src="./static/images/tree4crop.png">
+<details>
+  <summary>Expand to View Full Size! (warning: v big)</summary>
+  
+ <img width=400 src="./static/images/tree4.png">
+</details>
+
+##### 3. Interpretint the results
+>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+
+##### 4. Correlate the gene targets of drugs with their relevance in RNA-seq and WGS data 
+>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
 
 ## Results *: What did we observe? Figures are great!*
 
@@ -48,28 +100,19 @@ Instructions for running the following notebooks: *be sure to adjust these instr
 ### Important Resources *: primary data, github repository, Synapse project, dockerfile link etc.*
 
 
-
-
-# teamone
-_<small><small>(Although this team's name is one, they understand that there are likely multiple etiologies for NF, and will tease them out!)</small>_</small>
-
-
-## Goal: 
-Our goal is to classify and predict responses to a drug based on features like X, Y, Z. We then aimed to correlate the drug targets with relevance in gene expression (RNA-seq) and patient genotypes (WGS) @icon-fas-fa-flask
-
 ---
 ## members
 
 |   |   |   |   |   |   |
 |:------:|:------:|:------:|:------:|:-------:|:------:|
-|<a href="https://github.com/jacquelinevaleri"><img width=80 src="https://avatars2.githubusercontent.com/u/48304084?s=460&v=4"><br>@jacquelinevaleri</a> <br> Jackie Valeri |<a href="https://github.com/0916kj"><img width=80 src ="https://avatars3.githubusercontent.com/u/41515657?s=460&v=4"><br> @0916kj </a> <br> Kate James |<a href="https://github.com/jzwlin"><img width=80 src="https://avatars2.githubusercontent.com/u/21243979?s=460&v=4"> <br>@jzwlin </a> <br> Wanlin Zheng|<a href="https://github.com/cchristina"> <img width=80 src="https://avatars0.githubusercontent.com/u/3009984?s=460&v=4"> <br>@cchristina </a><br> Christina Cuneo |<a href=""><img width=80 src="https://image.shutterstock.com/image-vector/user-account-profile-circle-flat-260nw-467503004.jpg"> <br> @blaaaaaah </a><br> name name |<a href=""><img width=80 src="https://image.shutterstock.com/image-vector/user-account-profile-circle-flat-260nw-467503004.jpg"> <br> @blaaaaaah </a><br> name name |
+|<a href="https://github.com/jacquelinevaleri"><img width=80 src="https://avatars2.githubusercontent.com/u/48304084?s=460&v=4"><br>@jacquelinevaleri</a> <br> Jackie Valeri |<a href="https://github.com/0916kj"><img width=80 src ="https://avatars3.githubusercontent.com/u/41515657?s=460&v=4"><br> @0916kj </a> <br> Kate James |<a href="https://github.com/jzwlin"><img width=80 src="https://avatars2.githubusercontent.com/u/21243979?s=460&v=4"> <br>@jzwlin </a> <br> Wanlin Zheng|<a href="https://github.com/cchristina"> <img width=80 src="https://avatars0.githubusercontent.com/u/3009984?s=460&v=4"> <br>@cchristina </a><br> Christina Cuneo |<a href=""><img width=80 src="https://image.shutterstock.com/image-vector/user-account-profile-circle-flat-260nw-467503004.jpg"> <br> @AAR0NM </a><br> Aaron M |<a href=""><img width=80 src="https://image.shutterstock.com/image-vector/user-account-profile-circle-flat-260nw-467503004.jpg"> <br> @blaaaaaah </a><br> name name |
 |   |   |   |   |   |   |
 
 
 
 ---
 
-##   What is Neurofibromatosis? 
+<!-- ##   What is Neurofibromatosis? 
 
 Neurofibromatosis is a set of three genetic conditions that cause tumors to grow throughout the body. It is automsomal dominant, though about half of all cases occur due to a random mutation.
 
@@ -126,41 +169,25 @@ __Schwannomatosis__ (sp?)
 ## About the drug study
 
 **this is directly from the page, not in my own words at all**  
-To generate this data, we combined compound/drug screens from multiple different projects, representative of about 1.3 million compound-concentration-cell line combinations (some of which are combination experiments, where a mixture of 2 compounds are tested). We then ran these data through a common pipeline to generate summary statistics for each compound-cell line experiment.
-
----
-## steps 
-
-##### 1. Parsing drug screen data and drug metadata into vectors for a model
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+To generate this data, we combined compound/drug screens from multiple different projects, representative of about 1.3 million compound-concentration-cell line combinations (some of which are combination experiments, where a mixture of 2 compounds are tested). We then ran these data through a common pipeline to generate summary statistics for each compound-cell line experiment. -->
 
 
-##### 2. Create off-the-shelf machine learning models as well as a simple multi-layer perceptron
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
 
-##### 3. Interpretint the results
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+<!-- ## tech stack
 
-##### 4. Correlate the gene targets of drugs with their relevance in RNA-seq and WGS data 
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+--- -->
 
----
-
-## methods used 
-
----
-
-## tech stack
-
----
-
-## results / viz
-
----
-
-
----
 
 ## Acknowledgements
 
 Huge thank you to CTF, Sage,  SVAI, NTAP, uuhhh, google launchpad?
+
+
+
+
+---
+other thigns?
+requirements 
+install/run instructions (make sure all extra files are in the repo et cetera)
+
+talk about the NF Hackathon
