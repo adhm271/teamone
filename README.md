@@ -14,13 +14,12 @@
 
 ## Abstract *: Summarize everything in a few sentences.* 
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
-
+To understand the results from the drug screening data, we wanted to see if any chemical or structural properties of the drugs themselves correlated with the screening. We analyzed features from ~1750 of the molecules in the screen via PubChem, exploring properties such as molecular weight, number of hydrogen bonds, total polar surface area, etc. We then used several off-the-shelf classifiers from sklearn, such as a Random Forest Classifier and KNN Classifier, to identify salient features and the predictive property of these molecules. We also looked at a very simple multi-layer perceptron to try to get an increased accuracy. These models were engineered for both regression and classification, with an improvement in accuracy in the classification models. The most important features of drugs contributing to differential AUC and Maximum Response were total polar surface area (TPSA), complexity, and xlogp. Finally, we extended the drug screening data to the top genes targeted by the highest-performing drugs, finding xxx in RNA-seq and xxx in WGS.
 
 
 ## Introduction *: What's the problem? Why should we solve it?*
 
-Our goal is to classify and predict responses to a drug based on features like _[X, Y, Z]_. We then aimed to correlate the drug targets with relevance in gene expression (RNA-seq) and patient genotypes (WGS) 
+Modern high-throughput drug screens are useful for testing out drugs in vitro before executing more expensive, resource-intensive animal trials or human clinical trials. However, drug screen data is not always robust, and difficulties arise in translating results from the dish to an in vivo model. Given these challenges, we were interested in understanding if the chemical or structural properties of the drugs were driving their in vitro measured response. Since we wanted to classify and predict responses to a drug based on features like molecular weight and polarity, we looked at how these features correlated with the predictive ability of the three models we used. We then aimed to correlate the drug targets with relevance in gene expression (RNA-seq) and patient genotypes (WGS). 
 
 ## Methods *: How did we go about solving it?*
 
@@ -35,42 +34,59 @@ Our goal is to classify and predict responses to a drug based on features like _
 
 
 
-
-<img width=400 src="./static/images/tree1crop.png">
+<table>
+<tr>
+    <td>
+<img width=350 src="./static/images/tree1crop.png">
 <details>
   <summary>Expand to View Full Size! (warning: v big)</summary>
   
- <img width=400 src="./static/images/tree1.png">
+ <!-- <img width=400 src="./static/images/tree1.png"> -->
+ <img src="./static/images/tree1.png">
 </details>
 
-<img width=400 src="./static/images/tree2crop.png">
+</td>
+
+<td>
+<img width=350 src="./static/images/tree2crop.png">
 <details>
   <summary>Expand to View Full Size! (warning: v big)</summary>
   
- <img width=400 src="./static/images/tree2.png">
+ <!-- <img width=400 src="./static/images/tree2.png"> -->
+ <img src="./static/images/tree2.png">
 </details>
+</td>
+</tr>
 
-
-<img width=400 src="./static/images/tree3crop.png">
+<tr>
+<td>
+<img width=350 src="./static/images/tree3crop.png">
 <details>
   <summary>Expand to View Full Size! (warning: v big)</summary>
   
- <img width=400 src="./static/images/tree3.png">
+ <!-- <img width=400 src="./static/images/tree3.png"> -->
+ <img src="./static/images/tree3.png">
 </details>
+</td>
 
+<td>
 
-<img width=400 src="./static/images/tree4crop.png">
+<img width=350 src="./static/images/tree4crop.png">
 <details>
   <summary>Expand to View Full Size! (warning: v big)</summary>
   
- <img width=400 src="./static/images/tree4.png">
-</details>
+ <!-- <img width=400 src="./static/images/tree4.png"> -->
+ <img src="./static/images/tree4.png">
+r</details>
+</td>
+</tr>
+</table>
 
 ##### 3. Interpretint the results
->Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+>`Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. `
 
 ##### 4. Correlate the gene targets of drugs with their relevance in RNA-seq and WGS data 
->Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+>`Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia `
 
 ## Results *: What did we observe? Figures are great!*
 
@@ -105,7 +121,7 @@ Instructions for running the following notebooks: *be sure to adjust these instr
 
 |   |   |   |   |   |   |
 |:------:|:------:|:------:|:------:|:-------:|:------:|
-|<a href="https://github.com/jacquelinevaleri"><img width=80 src="https://avatars2.githubusercontent.com/u/48304084?s=460&v=4"><br>@jacquelinevaleri</a> <br> Jackie Valeri |<a href="https://github.com/0916kj"><img width=80 src ="https://avatars3.githubusercontent.com/u/41515657?s=460&v=4"><br> @0916kj </a> <br> Kate James |<a href="https://github.com/jzwlin"><img width=80 src="https://avatars2.githubusercontent.com/u/21243979?s=460&v=4"> <br>@jzwlin </a> <br> Wanlin Zheng|<a href="https://github.com/cchristina"> <img width=80 src="https://avatars0.githubusercontent.com/u/3009984?s=460&v=4"> <br>@cchristina </a><br> Christina Cuneo |<a href=""><img width=80 src="https://image.shutterstock.com/image-vector/user-account-profile-circle-flat-260nw-467503004.jpg"> <br> @AAR0NM </a><br> Aaron M |<a href=""><img width=80 src="https://image.shutterstock.com/image-vector/user-account-profile-circle-flat-260nw-467503004.jpg"> <br> @blaaaaaah </a><br> name name |
+|<a href="https://github.com/jackievaleri"><img width=80 src="https://avatars2.githubusercontent.com/u/48304084?s=460&v=4"><br>@jackievaleri</a> <br> Jackie Valeri |<a href="https://github.com/0916kj"><img width=80 src ="https://avatars3.githubusercontent.com/u/41515657?s=460&v=4"><br> @0916kj </a> <br> Kate James |<a href="https://github.com/jzwlin"><img width=80 src="https://avatars2.githubusercontent.com/u/21243979?s=460&v=4"> <br>@jzwlin </a> <br> Wanlin Zheng|<a href="https://github.com/cchristina"> <img width=80 src="https://avatars0.githubusercontent.com/u/3009984?s=460&v=4"> <br>@cchristina </a><br> Christina Cuneo |<a href=""><img width=80 src="https://image.shutterstock.com/image-vector/user-account-profile-circle-flat-260nw-467503004.jpg"> <br> @AAR0NM </a><br> Aaron M |<a href=""><img width=80 src="https://image.shutterstock.com/image-vector/user-account-profile-circle-flat-260nw-467503004.jpg"> <br> @blaaaaaah </a><br> name name |
 |   |   |   |   |   |   |
 
 
