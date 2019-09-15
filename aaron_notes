@@ -1,0 +1,16 @@
+
+need to find a set of datafiles that share the same columns. Then we can enlarge our dataset and train with a better disribution :) 
+
+single agent screens
+have max response, target, drug name, and AC50 but no cell type :( 
+https://www.synapse.org/#!Synapse:syn12087415
+-MPIE 1.0 only for syn1 and syn 5
+-MPIE 4 for alll including the new syn6!
+
+raw data - combination screens
+https://www.synapse.org/#!Synapse:syn18457398
+for each cell line: max response, cell type, target but need too join for paramenters and then for all cell lines.
+use ...metadata and ...responses
+
+^figure out how to join summaries with these
+https://www.synapse.org/#!Synapse:syn18457523
