@@ -113,7 +113,7 @@ __RFC AUC feature importance__
 <table allign="center">
     <tr>
     <td>
-        <img alt="feature_importance" src="./static/images/featureimportances.png"><br><em>r2</em>
+        <img alt="feature_importance" src="./static/images/featureimportance.png"><br><em>r2</em>
     </td>
     </tr>
     </table>
