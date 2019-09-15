@@ -1,9 +1,9 @@
 # HACKNF2 – teamone
 
 
-## Please cite our work -- here is the ICMJE Standard Citation:
+## ICMJE Standard Citation:
 
-### ...and a link to the DOI: *You can make a free DOI with zenodo, synapse, figshare, or other resources <link>*
+### Link to the DOI:  <link>
 
 <!-- ## Awesome Logo *(if applicable)* -->
 
@@ -66,12 +66,8 @@ MLP: Three fully connected layers were built, with 15, 10, and 6 nodes, respecti
 
 ## Results:
 
-__regression__
-
-
-```python
-    #maybe put a relevant code block here?
-```
+__Regression__
+We evaluated the R2, MAE, MSE, and Explained Variance for each KNN and Random Forest Classifier when trained to predict the continuous AUC and Max Response values for each of the 6 cell lines.
 
 <table allign="center">
     <tr>
@@ -92,13 +88,8 @@ __regression__
     </tr>
     </table>
 
-__classification__  
->Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-   ```python
-
-   for whatever in whichever
-        print("maybe code?")
+__Classification__
+We evaluated the Precision, Accuracy, auROC, and F1 Score for each KNN and Random Forest Classifier when trained to predict the class (top 50% vs bottom 50%) of the AUC and Max Response values for each of the 6 cell lines.
    ```
 
 <table>
@@ -122,8 +113,8 @@ __classification__
 
 </table>
 
-__RFC AUC feature importance__
->something something
+__RFC Feature Importance__
+We investigated the relative importance for each of the 15 features examined for each drug by removing the feature from the regression on AUC values and estimating the associated drop in accuracy. 
 
 <table allign="center">
     <tr>
@@ -133,13 +124,8 @@ __RFC AUC feature importance__
     </tr>
     </table>
 
-__decision trees__
-```python
-def whatever(lst):
-    return something
-```
-
->Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+__Example Decision Trees__
+We visualized four of the decision trees in the AUC RFC to understand how the different features were stratifying the drug responses.
 
 <table>
 <tr>
@@ -196,11 +182,7 @@ def whatever(lst):
 <br><br>
 
 __MLP__
->mlp explanation
-```python
-def whatever(lst):
-    return something
-```
+We built a three-layer MLP and trained it over 100 epochs. The loss decreased and the accuracy increased over the 100 epochs, and there is a decent correlation between the measured and predicted AUC values from the MLP. The accuracy at the last epoch was 0.4944.
 
 <table>
 <tr>
@@ -220,11 +202,8 @@ def whatever(lst):
 
 
 
-__AUC STUFF__
->this is an explanation about all of this
-```python
-def whatever(lst):
-    return something
+__Exploration of Data Features__
+Since complexity, TPSA, and XLOGP seemed like the most important features, we visualized how they varied with the AUC for each of the 6 cell lines, colored according to the legends in the plot.
 ```
 
 <table>
