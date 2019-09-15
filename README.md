@@ -39,21 +39,21 @@ __regression__
     #maybe put a relevant code block here?
 ```
 
-<table>
+<table allign="center">
     <tr>
     <td>
-        <img src="./static/images/regression_r2.png">
+        <img alt="r2 regression" src="./static/images/regression_r2.png"><br><em>r2</em>
     </td>
     <td>
-        <img src="./static/images/regression_mae.png">
+        <img alt="MAE regression" src="./static/images/regression_mae.png"><br><em>MAE</em>
     </td>        
     </tr>
     <tr>
     <td>
-        <img src="./static/images/regression_mse.png">
+        <img alt="MSE regression" src="./static/images/regression_mse.png"><br><em>MS</em>
     </td>
     <td>
-        <img src="./static/images/regression_expl_var.png">
+        <img alt="expl var regression" src="./static/images/regression_expl_var.png"><br> <em>expl var</em>
     </td>
     </tr>
     </table>
@@ -91,7 +91,7 @@ __classification__
 __RFC AUC feature importance__
 >something something
 
-__TREES__
+__decision trees__
 ```python
 def whatever(lst):
     return something
@@ -102,22 +102,22 @@ def whatever(lst):
 <table>
 <tr>
     <td>
-<img width=350 src="./static/images/tree1crop.png">
+<img width=400 src="./static/images/tree1crop.png">
 <details>
   <summary>Expand to View Full Size! (warning: v big)</summary>
   
- <!-- <img width=400 src="./static/images/tree1.png"> -->
+
  <img src="./static/images/tree1.png">
 </details>
 
 </td>
 
 <td>
-<img width=350 src="./static/images/tree2crop.png">
+<img width=400 src="./static/images/tree2crop.png">
 <details>
   <summary>Expand to View Full Size! (warning: v big)</summary>
   
- <!-- <img width=400 src="./static/images/tree2.png"> -->
+
  <img src="./static/images/tree2.png">
 </details>
 </td>
@@ -125,11 +125,10 @@ def whatever(lst):
 
 <tr>
 <td>
-<img width=350 src="./static/images/tree3crop.png">
+<img width=400 src="./static/images/tree3crop.png">
 <details>
   <summary>Expand to View Full Size! (warning: v big)</summary>
   
- <!-- <img width=400 src="./static/images/tree3.png"> -->
  <img src="./static/images/tree3.png">
 </details>
 </td>
@@ -138,11 +137,11 @@ def whatever(lst):
 
 
 
-<img width=350 src="./static/images/tree4crop.png">
+<img width=400 src="./static/images/tree4crop.png">
 <details>
   <summary>Expand to View Full Size! (warning: v big)</summary>
   
- <!-- <img width=400 src="./static/images/tree4.png"> -->
+
  <img src="./static/images/tree4.png">
 </details>
 </td>
@@ -154,7 +153,37 @@ def whatever(lst):
 <a href="./static/images/tree8.png">trees</a>
 <br><br>
 
+__MLP__
+>mlp explanation
+```python
+def whatever(lst):
+    return something
+```
 
+<table>
+<tr>
+<td>
+<img alt="MLP" src="./static/images/MLP_accuracy_vs_epochs.png"><br><em>MLP accuracy vs epochs</em>
+</td>
+<td>
+<img alt="MLP" src="./static/images/MLP_loss_vs_epochs.png"><br><em>MLP loss     vs epochs</em>
+</td>
+<td>
+<img alt="MLP" src="./static/images/MLP_measured_vs_predicted.png"><br><em>MLP measured vs predicted</em>
+</td>
+
+</tr>
+</table>
+
+
+
+
+__AUC STUFF__
+>this is an explanation about all of this
+```python
+def whatever(lst):
+    return something
+```
 
 <table>
 <tr>
@@ -210,7 +239,7 @@ Instructions for running the following notebooks: *be sure to adjust these instr
 
 |   |   |   |   |   |   |
 |:------:|:------:|:------:|:------:|:-------:|:------:|
-|<a href="https://github.com/jackievaleri"><img width=80 src="https://avatars2.githubusercontent.com/u/48304084?s=460&v=4"><br>@jackievaleri</a> <br> Jackie Valeri |<a href="https://github.com/0916kj"><img width=80 src ="https://avatars3.githubusercontent.com/u/41515657?s=460&v=4"><br> @0916kj </a> <br> Kate James |<a href="https://github.com/jzwlin"><img width=80 src="https://avatars2.githubusercontent.com/u/21243979?s=460&v=4"> <br>@jzwlin </a> <br> Wanlin Zheng|<a href="https://github.com/cchristina"> <img width=80 src="https://avatars0.githubusercontent.com/u/3009984?s=460&v=4"> <br>@cchristina </a><br> Christina Cuneo |<a href=""><img width=80 src="https://image.shutterstock.com/image-vector/user-account-profile-circle-flat-260nw-467503004.jpg"> <br> @AAR0NM </a><br> Aaron M |<a href=""><img width=80 src="https://image.shutterstock.com/image-vector/user-account-profile-circle-flat-260nw-467503004.jpg"> <br> @blaaaaaah </a><br> name name |
+|<a href="https://github.com/jackievaleri"><img width=80 src="https://avatars3.githubusercontent.com/u/33818756?s=460&v=4"><br>@jackievaleri</a> <br> Jackie Valeri |<a href="https://github.com/0916kj"><img width=80 src ="https://avatars3.githubusercontent.com/u/41515657?s=460&v=4"><br> @0916kj </a> <br> Kate James |<a href="https://github.com/jzwlin"><img width=80 src="https://avatars2.githubusercontent.com/u/21243979?s=460&v=4"> <br>@jzwlin </a> <br> Wanlin Zheng|<a href="https://github.com/cchristina"> <img width=80 src="https://avatars0.githubusercontent.com/u/3009984?s=460&v=4"> <br>@cchristina </a><br> Christina Cuneo |<a href=""><img width=80 src="https://image.shutterstock.com/image-vector/user-account-profile-circle-flat-260nw-467503004.jpg"> <br> @AAR0NM </a><br> Aaron M |<a href=""><img width=80 src="https://avatars0.githubusercontent.com/u/55332666?s=460&v=4"> <br> @joebvirtual </a><br> Joe B Virtual |
 |   |   |   |   |   |   |
 
 
