@@ -51,6 +51,21 @@ Charge -- Total formal charge
 
 ##### 3. We create off-the-shelf machine learning models as well as a simple multi-layer perceptron
 
+
+For all models, a 70%/30% train/test split was used on the data. Each of the 1784 drug responses were evaluated on the 6 cell lines available for both AUC and Max Resp.
+
+Random Forest Classifier: 1000 decision trees aggregated to predict and classify the AUC and Max Resp, individually. Gini purity was used to evaluate the decision tree validity and bootstrapping was used to make sure the model was not overfit on the data.
+
+K-Nearest Neighbors Classifier: A classifier and regressor was built to aggregate information from the 5 nearest neighbors, with the BallTree algorithm (according to sklearn documentation, the BallTree for fast generalized N-point problems). Minkowski distance was used to calculate similarity of neighbors in the data.
+
+MLP: Three fully connected layers were built, with 15, 10, and 6 nodes, respectively. ReLu activation was used after each layer except the last, which had a linear activation function. The Adam optimizer was used with MSE as the loss function. Batches of 20 drugs at a time were fed into the model for optimization over 100 epochs. Accuracy, MSE, and MAE were recorded over time.
+
+
+##### 4. Correlate the gene targets of drugs with their relevance in RNA-seq and WGS data 
+>`Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia `
+
+## Results *: What did we observe? Figures are great!*
+
 __regression__
 
 
@@ -226,11 +241,6 @@ def whatever(lst):
 </tr>
 </table>
 `
-
-##### 4. Correlate the gene targets of drugs with their relevance in RNA-seq and WGS data 
->`Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia `
-
-## Results *: What did we observe? Figures are great!*
 
 ## Conclusion/Discussion: 
 
