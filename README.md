@@ -18,6 +18,7 @@
 <div align="right">
     <b><a href="#contents">↥ </a></b>
 </div>
+
 ## Abstract  
 
 
@@ -28,6 +29,7 @@ To understand the results from the drug screening data, we wanted to see if any 
 <div align="right">
     <b><a href="#contents">↥ </a></b>
 </div>
+
 ## Introduction: 
 
 
@@ -38,6 +40,7 @@ Modern high-throughput drug screens are useful for testing out drugs in vitro be
 <div align="right">
     <b><a href="#contents">↥ </a></b>
 </div>
+
 ## Methods:
 
 
@@ -89,6 +92,7 @@ MLP: Three fully connected layers were built, with 15, 10, and 6 nodes, respecti
 <div align="right">
     <b><a href="#contents">↥ </a></b>
 </div>
+
 ## Results:
 
 
@@ -258,10 +262,12 @@ We investigated the SNPs for NF1 patients for the top ~50 or so drug targets whe
 
 ---
 
-## Conclusion/Discussion:
 <div align="right">
     <b><a href="#contents">↥ </a></b>
 </div> 
+
+## Conclusion/Discussion:
+
 
 ### Please make sure you address ALL of the following:
 
@@ -278,6 +284,7 @@ We investigated the SNPs for NF1 patients for the top ~50 or so drug targets whe
 <div align="right">
     <b><a href="#contents">↥ </a></b>
 </div>
+
 ## Reproduction:
 
 
@@ -300,6 +307,7 @@ Instructions for running the following notebooks: *be sure to adjust these instr
 <div align="right">
     <b><a href="#contents">↥ </a></b>
 </div>
+
 ## Members
 
 
