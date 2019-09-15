@@ -407,7 +407,7 @@ The Datasets used for the analyses described in this manuscript were generated b
 
 ---
 
-## Tools Used
+## Tools 
 <div align="right">
     <b><a href="#contents">↥ </a></b>
 </div>
