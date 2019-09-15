@@ -1,6 +1,3 @@
-# HACKNF2 – teamone
-<img src="./static/images/templogo.png">
-
 |
 <a href="https://github.com/SVAI/teamone#Abstract">Abstract</a> | 
 <a href="https://github.com/SVAI/teamone#Introduction">Introduction</a> |
@@ -12,6 +9,8 @@
 <a href="https://github.com/SVAI/teamone#Tools">Tools</a> |
 <a href="https://github.com/SVAI/teamone#Acknowledgements">Acknowledgements </a>
 |
+
+<img src="./static/images/templogo.png">
 
 ---
 
@@ -424,34 +423,32 @@ The Datasets used for the analyses described in this manuscript were generated b
 ---
 ## Acknowledgements
 
+Thank you so much for all parties that made this hackathon possible! 
 
 
 <table>
 <tr>
 <td>
-<img width=100 src="./static/images/acknowledgements/ctf.png">
+<a href="https://www.ctf.org/"><img width=100 src="./static/images/acknowledgements/ctf.png"></a>
 </td>
 <td>
-<img width=100 src="./static/images/acknowledgements/sage.png">
+<a href="https://sagebionetworks.org/"><img width=100 src="./static/images/acknowledgements/sage.png"></a>
 </td>
 <td>
-<img width=100 src="./static/images/acknowledgements/svai.png">
+<a href="https://sv.ai/"><img width=100 src="./static/images/acknowledgements/svai.png"></a>
 </td>
 <td>
-<img width=100 src="./static/images/acknowledgements/ntap.png">
+<a href="http://www.n-tap.org/"><img width=100 src="./static/images/acknowledgements/ntap.png"></a>
 </td>
 </tr>
 <td>
-<img width=100 src="./static/images/acknowledgements/GoogleLaunchpad.png">
+<a href="https://developers.google.com/community/launchpad/"><img width=100 src="./static/images/acknowledgements/GoogleLaunchpad.png"></a>
 </td>
 <td>
-<img width=100 src="./static/images/acknowledgements/GoogleCloud.png">
+<a href="https://healx.io/"><img width=100 src="./static/images/acknowledgements/healx.png"></a>
 </td>
 <td>
-<img width=100 src="./static/images/acknowledgements/healx.png">
-</td>
-<td>
-<img width=100 src="./static/images/acknowledgements/wuxiapp.png">
+<a href="https://www.wuxiapptec.com/"><img width=100 src="./static/images/acknowledgements/wuxiapp.png"></a>
 </td>
 </tr>
 
