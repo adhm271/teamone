@@ -11,7 +11,10 @@
 
 ## Website *(if applicable)*
 
+
 ## Abstract *: Summarize everything in a few sentences.* 
+
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
 
 
 
@@ -26,8 +29,15 @@ Our goal is to classify and predict responses to a drug based on features like _
 >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 
 
+
 ##### 2. Create off-the-shelf machine learning models as well as a simple multi-layer perceptron
->Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+>Decision tree stuff~
+
+<figure>
+<a href="./static/images/tree1.png"><img width=400 src="./static/images/tree1crop.png"></a>
+  <figcaption>Sample from one of our trees, click to expand. Warning: Very large.</figcaption>
+</figure>
+
 ##### 3. Interpretint the results
 >Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
 
