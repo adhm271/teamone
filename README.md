@@ -9,55 +9,38 @@
 
 <img src="./static/images/templogo.png">
 
-## Website *(if applicable)*
-
-
-## Abstract *: Summarize everything in a few sentences.* 
+## Abstract 
 
 To understand the results from the drug screening data, we wanted to see if any chemical or structural properties of the drugs themselves correlated with the screening. We analyzed features from ~1750 of the molecules in the screen via PubChem, exploring properties such as molecular weight, number of hydrogen bonds, total polar surface area, etc. We then used several off-the-shelf classifiers from sklearn, such as a Random Forest Classifier and KNN Classifier, to identify salient features and the predictive property of these molecules. We also looked at a very simple multi-layer perceptron to try to get an increased accuracy. These models were engineered for both regression and classification, with an improvement in accuracy in the classification models. The most important features of drugs contributing to differential AUC and Maximum Response were total polar surface area (TPSA), complexity, and xlogp. Finally, we extended the drug screening data to the top genes targeted by the highest-performing drugs, finding xxx in RNA-seq and xxx in WGS.
 
 
-## Introduction *: What's the problem? Why should we solve it?*
+## Introduction:
 
 Modern high-throughput drug screens are useful for testing out drugs in vitro before executing more expensive, resource-intensive animal trials or human clinical trials. However, drug screen data is not always robust, and difficulties arise in translating results from the dish to an in vivo model. Given these challenges, we were interested in understanding if the chemical or structural properties of the drugs were driving their in vitro measured response. Since we wanted to classify and predict responses to a drug based on features like molecular weight and polarity, we looked at how these features correlated with the predictive ability of the three models we used. We then aimed to correlate the drug targets with relevance in gene expression (RNA-seq) and patient genotypes (WGS). 
 
-## Methods *: How did we go about solving it?*
+## Methods:
 
 
 ##### 1. Parsing drug screen data and drug metadata into vectors for a model
->Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-
 We examined several structural properties of the drugs as reported by PubChem:
 
 MolecularWeight -- Calculated molecular weight in units g/mol.
-
 XLogP -- Log P calculated using XLogP method
-
 HBD -- Count of hydrogen bond donors
-
 HBA -- Count of hydrogen bond acceptors
-
 Rotatable Bond -- Count of rotatable bonds
-
 TPSA -- Polar surface area calculated using topological polar surface area method
-
 Heavy Atom -- Count of heavy atoms, i.e., being those other than hydrogen atoms
-
 Isotope -- Count of atoms with specified isotopic atom labels
-
 Tautomer -- Count of unique tautomeric forms (to a maximum of 1,000).
-
 Covalent Unit -- Count of covalently bonded moieties within a CID
-
 Complexity -- Measure of structural complexity
-
 Charge -- Total formal charge
 
 ##### 2. Create off-the-shelf machine learning models as well as a simple multi-layer perceptron
 
 __regression__
 
->Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 ```python
     #maybe put a relevant code block here?
