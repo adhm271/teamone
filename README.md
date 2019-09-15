@@ -64,7 +64,7 @@ MLP: Three fully connected layers were built, with 15, 10, and 6 nodes, respecti
 ##### 4. Correlate the gene targets of drugs with their relevance in RNA-seq and WGS data 
 >`Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia `
 
-## Results *: What did we observe? Figures are great!*
+## Results:
 
 __regression__
 
@@ -254,7 +254,7 @@ def whatever(lst):
 
 #### *4. What skills would additional collaborators ideally have?*
 
-## Reproduction: *How to reproduce the findings!*
+## Reproduction:
 
 ### Docker
 
@@ -505,7 +505,6 @@ Huge thank you to CTF, Sage,  SVAI, NTAP, uuhhh, google launchpad?
 
 
 ---
-other thigns?
 requirements 
 install/run instructions (make sure all extra files are in the repo et cetera)
 
