@@ -38,6 +38,17 @@ Our goal is to classify and predict responses to a drug based on features like _
   <figcaption>Sample from one of our trees, click to expand. Warning: Very large.</figcaption>
 </figure>
 
+
+<img width=400 src="./static/images/tree2crop.png">
+
+
+
+<details>
+  <summary>Expand to View Full Size! (warning: v big)</summary>
+  
+ <img width=400 src="./static/images/tree2.png">
+</details>
+
 ##### 3. Interpretint the results
 >Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
 
