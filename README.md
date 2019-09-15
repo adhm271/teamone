@@ -87,6 +87,7 @@ MLP: Three fully connected layers were built, with 15, 10, and 6 nodes, respecti
 
 
 ##### 4. Correlate the gene targets of drugs with their relevance in genomic data
+We looked at 25 genes targeted by the top drugs when stratified according to AUC in 6 NF2 deficient cell lines. For these genes, we looked at the different RNA-seq transcript counts in a mixed dataset of NF1 and NF2 patients. We also looked at 13 of these genes to find all associated SNPs from the whole genome sequencing (WGS) dataset of NF1 patients, by looking at the nunber of SNPs in both cutaneous neurofibromas (cNFs) and the matched normal blood samples.
 
 ---
 
