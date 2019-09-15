@@ -297,6 +297,7 @@ Run the jupyter notebooks in the github. All data extraction, visualization, and
 ### Docker
 
 We uploaded this data and these notebooks to a docker. The docker will be uploaded to dockerhub shortly.
+If you need to install any packages that are not intitally installed (anything imported in the notebook before you modify the code), wheither you're running your container locally or on the cloud, you have to do it from within the notebook via the esacpe charecter (e.g. "!pip install pubchempy") before you try to import it.
 
 ---
 
