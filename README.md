@@ -20,9 +20,9 @@ Modern high-throughput drug screens are useful for testing out drugs in vitro be
 
 ## Methods:
 
+##### 1. We looked at screening data across 1784 molecules and 6 different cell lines.
 
-##### 1. Parsing drug screen data and drug metadata into vectors for a model
-We examined several structural properties of the drugs as reported by PubChem:
+##### 2. We examined several structural properties of the drugs as reported by PubChem:
 
 MolecularWeight -- Calculated molecular weight in units g/mol.
 
@@ -49,7 +49,7 @@ Complexity -- Measure of structural complexity
 Charge -- Total formal charge
 
 
-##### 2. Create off-the-shelf machine learning models as well as a simple multi-layer perceptron
+##### 3. We create off-the-shelf machine learning models as well as a simple multi-layer perceptron
 
 __regression__
 
@@ -217,10 +217,7 @@ def whatever(lst):
 </td>
 </tr>
 </table>
-
-
-##### 3. Interpretint the results
->`Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. `
+`
 
 ##### 4. Correlate the gene targets of drugs with their relevance in RNA-seq and WGS data 
 >`Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia `
