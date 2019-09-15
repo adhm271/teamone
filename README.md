@@ -110,6 +110,14 @@ __classification__
 __RFC AUC feature importance__
 >something something
 
+<table allign="center">
+    <tr>
+    <td>
+        <img alt="feature_importance" src="./static/images/featureimportances.png"><br><em>r2</em>
+    </td>
+    </tr>
+    </table>
+
 __decision trees__
 ```python
 def whatever(lst):
