@@ -1,16 +1,17 @@
 # HACKNF2 – teamone
 <img src="./static/images/templogo.png">
 
-<a href="https://github.com/SVAI/teamone#Abstract">Abstract</a>
-<a href="https://github.com/SVAI/teamone#Introduction">Introduction</a>
-<a href="https://github.com/SVAI/teamone#Methods">Methods</a>
-<a href="https://github.com/SVAI/teamone#Results">Results</a>
-<a href="https://github.com/SVAI/teamone#Reproduction">Reproduction</a>
-<a href="https://github.com/SVAI/teamone#Members">Members</a>
-<a href="https://github.com/SVAI/teamone#Resources">Resources</a>
-<a href="https://github.com/SVAI/teamone#Tools">Tools</a>
+|
+<a href="https://github.com/SVAI/teamone#Abstract">Abstract</a> | 
+<a href="https://github.com/SVAI/teamone#Introduction">Introduction</a> |
+<a href="https://github.com/SVAI/teamone#Methods">Methods</a> |
+<a href="https://github.com/SVAI/teamone#Results">Results</a> |
+<a href="https://github.com/SVAI/teamone#Reproduction">Reproduction</a> |
+<a href="https://github.com/SVAI/teamone#Members">Members</a> |
+<a href="https://github.com/SVAI/teamone#Resources">Resources</a> |
+<a href="https://github.com/SVAI/teamone#Tools">Tools</a> |
 <a href="https://github.com/SVAI/teamone#Acknowledgements">Acknowledgements </a>
-
+|
 
 ---
 
@@ -437,7 +438,7 @@ The Datasets used for the analyses described in this manuscript were generated b
 <img width=100 src="./static/images/acknowledgements/svai.png">
 </td>
 <td>
-<img width=100 src="./static/images/acknowledgements/ntap.png">|
+<img width=100 src="./static/images/acknowledgements/ntap.png">
 </td>
 </tr>
 <td>
