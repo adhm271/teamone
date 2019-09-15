@@ -296,13 +296,7 @@ Run the jupyter notebooks in the github. All data extraction, visualization, and
 
 ### Docker
 
-*The Docker image contains a jupyter notebook of drug clustering analysis and the dependencies to run them. There are no special credentials needed to access data for these analyses.
-
-Instructions for running the following notebooks: *be sure to adjust these instructions as necessary! check out https://github.com/Sage-Bionetworks/nf-hackathon-2019 for example containers and instructions*
-
-1. `docker pull <your dockerhub repo>/<this container>` command to pull the image from the DockerHub
-2. `docker run <your dockerhub repo>/<this container>` Run the docker image from the master shell script
-
+We uploaded this data and these notebooks to a docker. The docker will be uploaded to dockerhub shortly.
 
 ---
 
