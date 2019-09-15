@@ -285,26 +285,40 @@ Instructions for running the following notebooks: *be sure to adjust these instr
 
 <tr>
 <td>
+<a href="https://github.com/jackievaleri">
 @jackievaleri
+</a>
 </td>
 
 <td>
+<a href="https://github.com/0916kj">
 @0916kj
+</a>
 </td>
 
 <td>
+<a href="https://github.com/jzwlin">
 @jzwlin  
+</a>
 </td>
 
 <td>
-@cchristin
+<a href="https://github.com/cchristina">
+@cchristina
+</a>
 </td>
 
 <td>
-@AAR0NM </td>
+<a href="https://github.com/AAR0NM">
+@AAR0NM 
+</a>
+</td>
+
 
 <td>
+<a href="https://github.com/JoeBVirtual">
 @JoeBVirtual
+</a>
 </td>
 
 </tr>
