@@ -30,7 +30,10 @@ Modern high-throughput drug screens are useful for testing out drugs in vitro be
 
 
 ##### 2. Create off-the-shelf machine learning models as well as a simple multi-layer perceptron
->Decision tree stuff~
+
+__regression__
+
+>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 ```python
     #maybe put a relevant code block here?
@@ -55,6 +58,8 @@ Modern high-throughput drug screens are useful for testing out drugs in vitro be
     </tr>
     </table>
 
+__classification__  
+>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
    ```python
 
@@ -83,6 +88,16 @@ Modern high-throughput drug screens are useful for testing out drugs in vitro be
 
 </table>
 
+__RFC AUC feature importance__
+>something something
+
+__TREES__
+```python
+def whatever(lst):
+    return something
+```
+
+>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 <table>
 <tr>
@@ -121,7 +136,7 @@ Modern high-throughput drug screens are useful for testing out drugs in vitro be
 
 <td>
 
->RFC AUC feature importance
+
 
 <img width=350 src="./static/images/tree4crop.png">
 <details>
@@ -138,6 +153,8 @@ Modern high-throughput drug screens are useful for testing out drugs in vitro be
 <a href="./static/images/tree7.png">more</a>
 <a href="./static/images/tree8.png">trees</a>
 <br><br>
+
+
 
 <table>
 <tr>
