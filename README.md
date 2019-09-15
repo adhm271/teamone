@@ -33,20 +33,37 @@ Our goal is to classify and predict responses to a drug based on features like _
 ##### 2. Create off-the-shelf machine learning models as well as a simple multi-layer perceptron
 >Decision tree stuff~
 
-<figure>
-<a href="./static/images/tree1.png"><img width=400 src="./static/images/tree1crop.png"></a>
-  <figcaption>Sample from one of our trees, click to expand. Warning: Very large.</figcaption>
-</figure>
 
+
+
+<img width=400 src="./static/images/tree1crop.png">
+<details>
+  <summary>Expand to View Full Size! (warning: v big)</summary>
+  
+ <img width=400 src="./static/images/tree1.png">
+</details>
 
 <img width=400 src="./static/images/tree2crop.png">
-
-
-
 <details>
   <summary>Expand to View Full Size! (warning: v big)</summary>
   
  <img width=400 src="./static/images/tree2.png">
+</details>
+
+
+<img width=400 src="./static/images/tree3crop.png">
+<details>
+  <summary>Expand to View Full Size! (warning: v big)</summary>
+  
+ <img width=400 src="./static/images/tree3.png">
+</details>
+
+
+<img width=400 src="./static/images/tree4crop.png">
+<details>
+  <summary>Expand to View Full Size! (warning: v big)</summary>
+  
+ <img width=400 src="./static/images/tree4.png">
 </details>
 
 ##### 3. Interpretint the results
