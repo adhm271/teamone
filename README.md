@@ -9,51 +9,70 @@
 
 <img src="./static/images/templogo.png">
 
-## Website *(if applicable)*
-
-
-## Abstract *: Summarize everything in a few sentences.* 
+## Abstract 
 
 To understand the results from the drug screening data, we wanted to see if any chemical or structural properties of the drugs themselves correlated with the screening. We analyzed features from ~1750 of the molecules in the screen via PubChem, exploring properties such as molecular weight, number of hydrogen bonds, total polar surface area, etc. We then used several off-the-shelf classifiers from sklearn, such as a Random Forest Classifier and KNN Classifier, to identify salient features and the predictive property of these molecules. We also looked at a very simple multi-layer perceptron to try to get an increased accuracy. These models were engineered for both regression and classification, with an improvement in accuracy in the classification models. The most important features of drugs contributing to differential AUC and Maximum Response were total polar surface area (TPSA), complexity, and xlogp. Finally, we extended the drug screening data to the top genes targeted by the highest-performing drugs, finding xxx in RNA-seq and xxx in WGS.
 
 
-## Introduction *: What's the problem? Why should we solve it?*
+## Introduction:
 
 Modern high-throughput drug screens are useful for testing out drugs in vitro before executing more expensive, resource-intensive animal trials or human clinical trials. However, drug screen data is not always robust, and difficulties arise in translating results from the dish to an in vivo model. Given these challenges, we were interested in understanding if the chemical or structural properties of the drugs were driving their in vitro measured response. Since we wanted to classify and predict responses to a drug based on features like molecular weight and polarity, we looked at how these features correlated with the predictive ability of the three models we used. We then aimed to correlate the drug targets with relevance in gene expression (RNA-seq) and patient genotypes (WGS). 
 
-## Methods *: How did we go about solving it?*
+## Methods:
+
+##### 1. We looked at screening data across 1784 molecules and 6 different cell lines.
+
+##### 2. We examined several structural properties of the drugs as reported by PubChem:
+
+MolecularWeight -- Calculated molecular weight in units g/mol.
+
+XLogP -- Log P calculated using XLogP method
+
+HBD -- Count of hydrogen bond donors
+
+HBA -- Count of hydrogen bond acceptors
+
+Rotatable Bond -- Count of rotatable bonds
+
+TPSA -- Polar surface area calculated using topological polar surface area method
+
+Heavy Atom -- Count of heavy atoms, i.e., being those other than hydrogen atoms
+
+Isotope -- Count of atoms with specified isotopic atom labels
+
+Tautomer -- Count of unique tautomeric forms (to a maximum of 1,000).
+
+Covalent Unit -- Count of covalently bonded moieties within a CID
+
+Complexity -- Measure of structural complexity
+
+Charge -- Total formal charge
 
 
-##### 1. Parsing drug screen data and drug metadata into vectors for a model
->Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-
-
-
-##### 2. Create off-the-shelf machine learning models as well as a simple multi-layer perceptron
+##### 3. We create off-the-shelf machine learning models as well as a simple multi-layer perceptron
 
 __regression__
 
->Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 ```python
     #maybe put a relevant code block here?
 ```
 
-<table>
+<table allign="center">
     <tr>
     <td>
-        <img src="./static/images/regression_r2.png">
+        <img alt="r2 regression" src="./static/images/regression_r2.png"><br><em>r2</em>
     </td>
     <td>
-        <img src="./static/images/regression_mae.png">
+        <img alt="MAE regression" src="./static/images/regression_mae.png"><br><em>MAE</em>
     </td>        
     </tr>
     <tr>
     <td>
-        <img src="./static/images/regression_mse.png">
+        <img alt="MSE regression" src="./static/images/regression_mse.png"><br><em>MS</em>
     </td>
     <td>
-        <img src="./static/images/regression_expl_var.png">
+        <img alt="expl var regression" src="./static/images/regression_expl_var.png"><br> <em>expl var</em>
     </td>
     </tr>
     </table>
@@ -91,7 +110,7 @@ __classification__
 __RFC AUC feature importance__
 >something something
 
-__TREES__
+__decision trees__
 ```python
 def whatever(lst):
     return something
@@ -102,22 +121,22 @@ def whatever(lst):
 <table>
 <tr>
     <td>
-<img width=350 src="./static/images/tree1crop.png">
+<img width=400 src="./static/images/tree1crop.png">
 <details>
   <summary>Expand to View Full Size! (warning: v big)</summary>
   
- <!-- <img width=400 src="./static/images/tree1.png"> -->
+
  <img src="./static/images/tree1.png">
 </details>
 
 </td>
 
 <td>
-<img width=350 src="./static/images/tree2crop.png">
+<img width=400 src="./static/images/tree2crop.png">
 <details>
   <summary>Expand to View Full Size! (warning: v big)</summary>
   
- <!-- <img width=400 src="./static/images/tree2.png"> -->
+
  <img src="./static/images/tree2.png">
 </details>
 </td>
@@ -125,11 +144,10 @@ def whatever(lst):
 
 <tr>
 <td>
-<img width=350 src="./static/images/tree3crop.png">
+<img width=400 src="./static/images/tree3crop.png">
 <details>
   <summary>Expand to View Full Size! (warning: v big)</summary>
   
- <!-- <img width=400 src="./static/images/tree3.png"> -->
  <img src="./static/images/tree3.png">
 </details>
 </td>
@@ -138,11 +156,11 @@ def whatever(lst):
 
 
 
-<img width=350 src="./static/images/tree4crop.png">
+<img width=400 src="./static/images/tree4crop.png">
 <details>
   <summary>Expand to View Full Size! (warning: v big)</summary>
   
- <!-- <img width=400 src="./static/images/tree4.png"> -->
+
  <img src="./static/images/tree4.png">
 </details>
 </td>
@@ -154,7 +172,37 @@ def whatever(lst):
 <a href="./static/images/tree8.png">trees</a>
 <br><br>
 
+__MLP__
+>mlp explanation
+```python
+def whatever(lst):
+    return something
+```
 
+<table>
+<tr>
+<td>
+<img alt="MLP" src="./static/images/MLP_accuracy_vs_epochs.png"><br><em>MLP accuracy vs epochs</em>
+</td>
+<td>
+<img alt="MLP" src="./static/images/MLP_loss_vs_epochs.png"><br><em>MLP loss     vs epochs</em>
+</td>
+<td>
+<img alt="MLP" src="./static/images/MLP_measured_vs_predicted.png"><br><em>MLP measured vs predicted</em>
+</td>
+
+</tr>
+</table>
+
+
+
+
+__AUC STUFF__
+>this is an explanation about all of this
+```python
+def whatever(lst):
+    return something
+```
 
 <table>
 <tr>
@@ -169,10 +217,7 @@ def whatever(lst):
 </td>
 </tr>
 </table>
-
-
-##### 3. Interpretint the results
->`Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. `
+`
 
 ##### 4. Correlate the gene targets of drugs with their relevance in RNA-seq and WGS data 
 >`Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia `
@@ -208,11 +253,104 @@ Instructions for running the following notebooks: *be sure to adjust these instr
 ---
 ## members
 
-|   |   |   |   |   |   |
-|:------:|:------:|:------:|:------:|:-------:|:------:|
-|<a href="https://github.com/jackievaleri"><img width=80 src="https://avatars2.githubusercontent.com/u/48304084?s=460&v=4"><br>@jackievaleri</a> <br> Jackie Valeri |<a href="https://github.com/0916kj"><img width=80 src ="https://avatars3.githubusercontent.com/u/41515657?s=460&v=4"><br> @0916kj </a> <br> Kate James |<a href="https://github.com/jzwlin"><img width=80 src="https://avatars2.githubusercontent.com/u/21243979?s=460&v=4"> <br>@jzwlin </a> <br> Wanlin Zheng|<a href="https://github.com/cchristina"> <img width=80 src="https://avatars0.githubusercontent.com/u/3009984?s=460&v=4"> <br>@cchristina </a><br> Christina Cuneo |<a href=""><img width=80 src="https://image.shutterstock.com/image-vector/user-account-profile-circle-flat-260nw-467503004.jpg"> <br> @AAR0NM </a><br> Aaron M |<a href=""><img width=80 src="https://image.shutterstock.com/image-vector/user-account-profile-circle-flat-260nw-467503004.jpg"> <br> @blaaaaaah </a><br> name name |
-|   |   |   |   |   |   |
 
+
+
+<table>
+<tr>
+<td>
+<a href="https://github.com/jackievaleri"><img width=80 src="https://avatars3.githubusercontent.com/u/33818756?s=460&v=4"></a>
+</td>
+
+<td>
+    <a href="https://github.com/0916kj"><img width=80 src ="https://avatars3.githubusercontent.com/u/41515657?s=460&v=4"></a>
+</td>
+
+<td>
+<a href="https://github.com/jzwlin"><img width=80 src="https://avatars2.githubusercontent.com/u/21243979?s=460&v=4"> </a> 
+</td>
+
+<td>
+<a href="https://github.com/cchristina"> <img width=80 src="https://avatars0.githubusercontent.com/u/3009984?s=460&v=4"> </a>
+</td>
+
+<td>
+<a href=""><img width=80 src="https://image.shutterstock.com/image-vector/user-account-profile-circle-flat-260nw-467503004.jpg"> </a>
+</td>
+
+<td><a href="https://github.com/JoeBVirtual"><img width=80 src="https://avatars0.githubusercontent.com/u/55332666?s=460&v=4"></a>
+
+
+</tr>
+
+<tr>
+<td>
+<a href="https://github.com/jackievaleri">
+@jackievaleri
+</a>
+</td>
+
+<td>
+<a href="https://github.com/0916kj">
+@0916kj
+</a>
+</td>
+
+<td>
+<a href="https://github.com/jzwlin">
+@jzwlin  
+</a>
+</td>
+
+<td>
+<a href="https://github.com/cchristina">
+@cchristina
+</a>
+</td>
+
+<td>
+<a href="https://github.com/AAR0NM">
+@AAR0NM 
+</a>
+</td>
+
+
+<td>
+<a href="https://github.com/JoeBVirtual">
+@JoeBVirtual
+</a>
+</td>
+
+</tr>
+
+<tr>
+<td>
+Jackie Valeri
+</td>
+<td>
+Kate James
+</td>
+<td>
+Wanlin Zheng
+</td>
+
+<td>
+Christina Cuneo
+</td>
+
+<td>
+Aaron M
+</td>
+
+<td>
+Joe B Virtual
+
+</td>
+
+</tr>
+
+
+</table>
 
 
 ---
@@ -282,16 +420,70 @@ To generate this data, we combined compound/drug screens from multiple different
 
 --- -->
 
+## Tools et cetera
+<table>
+<tr>
+<td>
+<img width=100 src="./static/images/acknowledgements/GoogleCloud.png">
+</td>
+<td>
+<img width=100 src="./static/images/acknowledgements/jupyter.png">
+</td>
+<td>
+<img width=100 src="./static/images/acknowledgements/vscode.png">
+</td>
+
+<td>
+<img width=100 src="./static/images/acknowledgements/docker.png">
+</td>
+</tr>
+<tr>
+<td>
+<img width=100 src="./static/images/acknowledgements/slacknew.png">
+</td>
+
+<tr>
+
+</table>
+
 
 ## Acknowledgements
 
 #
 Huge thank you to CTF, Sage,  SVAI, NTAP, uuhhh, google launchpad?
 
-|   |   |   |   |   |   |
-|:------:|:------:|:------:|:------:|:-------:|:------:|
-|<img width=100 src="./static/images/acknowledgements/ctf.png">|<img width=100 src="./static/images/acknowledgements/sage.png">|<img width=100 src="./static/images/acknowledgements/svai.png">|<img width=100 src="./static/images/acknowledgements/GoogleCloud.png">|<img width=100 src="./static/images/acknowledgements/GoogleLaunchpad.png">|<img width=100 src="./static/images/acknowledgements/ntap.png">|
-|<img width=100 src="./static/images/acknowledgements/healx.png">|<img width=100 src="./static/images/acknowledgements/wuxiapp.png">|<img width=100 src="./static/images/acknowledgements/wuxinext.png">|<img width=100 src="./static/images/acknowledgements/vscode.png">|<img width=100 src="./static/images/acknowledgements/docker.png">|
+<table>
+<tr>
+<td>
+<img width=100 src="./static/images/acknowledgements/ctf.png">
+</td>
+<td>
+<img width=100 src="./static/images/acknowledgements/sage.png">
+</td>
+<td>
+<img width=100 src="./static/images/acknowledgements/svai.png">
+</td>
+<td>
+<img width=100 src="./static/images/acknowledgements/ntap.png">|
+</td>
+</tr>
+<td>
+<img width=100 src="./static/images/acknowledgements/GoogleLaunchpad.png">
+</td>
+<td>
+<img width=100 src="./static/images/acknowledgements/GoogleCloud.png">
+</td>
+<td>
+<img width=100 src="./static/images/acknowledgements/healx.png">
+</td>
+<td>
+<img width=100 src="./static/images/acknowledgements/wuxiapp.png">
+</td>
+</tr>
+
+</table>
+
+
 
 
 ---
