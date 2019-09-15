@@ -4,6 +4,7 @@
 <a href="https://github.com/SVAI/teamone#Introduction">Introduction</a> |
 <a href="https://github.com/SVAI/teamone#Methods">Methods</a> |
 <a href="https://github.com/SVAI/teamone#Results">Results</a> |
+<a href="https://github.com/SVAI/teamone#Conclusion">Conclusion</a> |
 <a href="https://github.com/SVAI/teamone#Reproduction">Reproduction</a> |
 <a href="https://github.com/SVAI/teamone#Members">Members</a> |
 <a href="https://github.com/SVAI/teamone#Resources">Resources</a> |
@@ -266,7 +267,7 @@ We investigated the SNPs for NF1 patients for the top ~50 or so drug targets whe
     <b><a href="#contents">↥ </a></b>
 </div> 
 
-## Conclusion/Discussion:
+## Conclusion
 
 In conclusion, we made three simple models to predict and classify the drug performance on 6 cell lines. To expand the investigation and improve the accuracy, we would want the following additional data: 
 
