@@ -1,8 +1,4 @@
-##### contents
-<div align="right">
-    <b><a href="#contents">↥ </a></b>
-</div>
-
+##### Contents
 |
 <a href="https://github.com/SVAI/teamone#Abstract">Abstract</a> | 
 <a href="https://github.com/SVAI/teamone#Introduction">Introduction</a> |
