@@ -229,7 +229,7 @@ We investigated the SNPs for NF1 patients for the top ~50 or so drug targets whe
 <table allign="center">
     <tr>
     <td>
-        <img alt="feature_importance" src="./static/images/snps_in_top_drug_targets.jpeg"><br><em>r2</em>
+        <img alt="snps" src="./static/images/snps_in_top_drug_targets.jpeg"><br><em>r2</em>
     </td>
     </tr>
     </table>
