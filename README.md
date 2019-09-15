@@ -1,4 +1,4 @@
-#----
+#
 
 |
 <a href="https://github.com/SVAI/teamone#Abstract">Abstract</a> | 
@@ -425,7 +425,7 @@ The Datasets used for the analyses described in this manuscript were generated b
 ---
 ## Acknowledgements 
 <div align="right">
-    <b><a href="#----">↥ </a></b>
+    <b><a href="#">↥ </a></b>
 </div>
 
 Thank you so much for all parties that made this hackathon possible! 
