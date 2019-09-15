@@ -77,10 +77,22 @@ Modern high-throughput drug screens are useful for testing out drugs in vitro be
   
  <!-- <img width=400 src="./static/images/tree4.png"> -->
  <img src="./static/images/tree4.png">
-r</details>
+</details>
 </td>
 </tr>
 </table>
+<a href="./static/images/tree5.png">look</a>
+<a href="./static/images/tree6.png">at</a>
+<a href="./static/images/tree7.png">more</a>
+<a href="./static/images/tree8.png">trees</a>
+<br><br>
+
+<img width=500 src="./static/images/featureimportance.png">
+
+<br>
+
+<img width=500 src="./static/images/scatterrrrrr.png">
+
 
 ##### 3. Interpretint the results
 >`Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. `
