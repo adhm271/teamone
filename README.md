@@ -1,18 +1,21 @@
 # HACKNF2 – teamone
 
 
-## Please cite our work -- here is the ICMJE Standard Citation:
+## ICMJE Standard Citation:
 
-### ...and a link to the DOI: *You can make a free DOI with zenodo, synapse, figshare, or other resources <link>*
+### Link to the DOI:  <link>
 
 <!-- ## Awesome Logo *(if applicable)* -->
 
 <img src="./static/images/templogo.png">
 
+---
+
 ## Abstract 
 
 To understand the results from the drug screening data, we wanted to see if any chemical or structural properties of the drugs themselves correlated with the screening. We analyzed features from ~1750 of the molecules in the screen via PubChem, exploring properties such as molecular weight, number of hydrogen bonds, total polar surface area, etc. We then used several off-the-shelf classifiers from sklearn, such as a Random Forest Classifier and KNN Classifier, to identify salient features and the predictive property of these molecules. We also looked at a very simple multi-layer perceptron to try to get an increased accuracy. These models were engineered for both regression and classification, with an improvement in accuracy in the classification models. The most important features of drugs contributing to differential AUC and Maximum Response were total polar surface area (TPSA), complexity, and xlogp. Finally, we extended the drug screening data to the top genes targeted by the highest-performing drugs, finding xxx in RNA-seq and xxx in WGS.
 
+---
 
 ## Introduction:
 
@@ -51,12 +54,25 @@ Charge -- Total formal charge
 
 ##### 3. We create off-the-shelf machine learning models as well as a simple multi-layer perceptron
 
-__regression__
+
+For all models, a 70%/30% train/test split was used on the data. Each of the 1784 drug responses were evaluated on the 6 cell lines available for both AUC and Max Resp.
+
+Random Forest Classifier: 1000 decision trees aggregated to predict and classify the AUC and Max Resp, individually. Gini purity was used to evaluate the decision tree validity and bootstrapping was used to make sure the model was not overfit on the data.
+
+K-Nearest Neighbors Classifier: A classifier and regressor was built to aggregate information from the 5 nearest neighbors, with the BallTree algorithm (according to sklearn documentation, the BallTree for fast generalized N-point problems). Minkowski distance was used to calculate similarity of neighbors in the data.
+
+MLP: Three fully connected layers were built, with 15, 10, and 6 nodes, respectively. ReLu activation was used after each layer except the last, which had a linear activation function. The Adam optimizer was used with MSE as the loss function. Batches of 20 drugs at a time were fed into the model for optimization over 100 epochs. Accuracy, MSE, and MAE were recorded over time.
 
 
-```python
-    #maybe put a relevant code block here?
-```
+##### 4. Correlate the gene targets of drugs with their relevance in RNA-seq and WGS data 
+>`Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia `
+
+---
+
+## Results:
+
+__Regression__
+We evaluated the R2, MAE, MSE, and Explained Variance for each KNN and Random Forest Classifier when trained to predict the continuous AUC and Max Response values for each of the 6 cell lines.
 
 <table allign="center">
     <tr>
@@ -77,14 +93,9 @@ __regression__
     </tr>
     </table>
 
-__classification__  
->Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-   ```python
-
-   for whatever in whichever
-        print("maybe code?")
-   ```
+__Classification__
+We evaluated the Precision, Accuracy, auROC, and F1 Score for each KNN and Random Forest Classifier when trained to predict the class (top 50% vs bottom 50%) of the AUC and Max Response values for each of the 6 cell lines.
+  
 
 <table>
     <tr>
@@ -107,16 +118,19 @@ __classification__
 
 </table>
 
-__RFC AUC feature importance__
->something something
+__RFC Feature Importance__
+We investigated the relative importance for each of the 15 features examined for each drug by removing the feature from the regression on AUC values and estimating the associated drop in accuracy. 
 
-__decision trees__
-```python
-def whatever(lst):
-    return something
-```
+<table allign="center">
+    <tr>
+    <td>
+        <img alt="feature_importance" src="./static/images/featureimportance.png"><br><em>r2</em>
+    </td>
+    </tr>
+    </table>
 
->Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+__Example Decision Trees__
+We visualized four of the decision trees in the AUC RFC to understand how the different features were stratifying the drug responses.
 
 <table>
 <tr>
@@ -173,11 +187,7 @@ def whatever(lst):
 <br><br>
 
 __MLP__
->mlp explanation
-```python
-def whatever(lst):
-    return something
-```
+We built a three-layer MLP and trained it over 100 epochs. The loss decreased and the accuracy increased over the 100 epochs, and there is a decent correlation between the measured and predicted AUC values from the MLP. The accuracy at the last epoch was 0.4944.
 
 <table>
 <tr>
@@ -197,12 +207,8 @@ def whatever(lst):
 
 
 
-__AUC STUFF__
->this is an explanation about all of this
-```python
-def whatever(lst):
-    return something
-```
+__Exploration of Data Features__
+Since complexity, TPSA, and XLOGP seemed like the most important features, we visualized how they varied with the AUC for each of the 6 cell lines, colored according to the legends in the plot.
 
 <table>
 <tr>
@@ -219,10 +225,7 @@ def whatever(lst):
 </table>
 `
 
-##### 4. Correlate the gene targets of drugs with their relevance in RNA-seq and WGS data 
->`Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia `
-
-## Results *: What did we observe? Figures are great!*
+---
 
 ## Conclusion/Discussion: 
 
@@ -236,7 +239,9 @@ def whatever(lst):
 
 #### *4. What skills would additional collaborators ideally have?*
 
-## Reproduction: *How to reproduce the findings!*
+---
+
+## Reproduction:
 
 ### Docker
 
@@ -353,74 +358,18 @@ Joe B Virtual
 </table>
 
 
+
+
+
 ---
-
-<!-- ##   What is Neurofibromatosis? 
-
-Neurofibromatosis is a set of three genetic conditions that cause tumors to grow throughout the body. It is automsomal dominant, though about half of all cases occur due to a random mutation.
-
-__NF1__  
-* Occurrs in about 1:3000 births  
-    * most common genetic predisposition to neurological problems  
-* Commonly diagnosed in early childhood or infancy   
-* Characteristics (from CTF.org)
-    * café-au-lait spots
-    * neurofibromas (cutaneous, subcutaneous, plexiform)
-    * scoliosis
-    * learning disabilities and cognitive differences
-    * larger head circumference
-    * delayed or early puberty
-    * shorter than average
-    * optic gliomas
-    * bone deformaties
-    * cosmetic concerns
-    * high blood pressure  
-* The affects on an individual can vary wildly, even amongst identical twins! 
+## references
 
 
-__NF2__  
-* (info also from ctf.org)
-* about 1:25000 worldwide
-* characterized by the growth of vestibular schwannomas on the nerve that connects sound and balance information between the ears and bran
-* common signs/symptoms
-    * tinnitus
-    * hearing loss
-    * balance issues
-    * facial weakness
-    * brain and cranial nerve damage
-    * swallowing difficulties
-    * seizures
-    * vision loss
-    * balance and mobilitoy loss 
-
-
-__Schwannomatosis__ (sp?)  
-(all from ctf again)
-* about 1:40000
-* only recently identified
-* characterized by the development of schwannomas, usually on spinal and peripheral nerves
-    * schwannomas are abnormal growth of Schwann cells which are insulators to nerves (?????)
-* common signs
-    * numbness, tingling
-    * weakness, including favial weakness
-    * bowel and urinary dysfunction
-    * vision changes
-    * headaches 
+The Datasets used for the analyses described in this manuscript were generated by the Synodos-NF2 consortium and obtained through the consortium data portal on Synapse at <a href="https://www.synapse.org/#!Synapse:syn2343195/wiki/400317">syn2343195</a>. The consortium was funded by <a href="http://www.ctf.org/">Children's Tumor Foundation</a> (CTF)
 
 ---
 
-## About the drug study
-
-**this is directly from the page, not in my own words at all**  
-To generate this data, we combined compound/drug screens from multiple different projects, representative of about 1.3 million compound-concentration-cell line combinations (some of which are combination experiments, where a mixture of 2 compounds are tested). We then ran these data through a common pipeline to generate summary statistics for each compound-cell line experiment. -->
-
-
-
-<!-- ## tech stack
-
---- -->
-
-## Tools et cetera
+## Tools Used
 <table>
 <tr>
 <td>
@@ -430,27 +379,35 @@ To generate this data, we combined compound/drug screens from multiple different
 <img width=100 src="./static/images/acknowledgements/jupyter.png">
 </td>
 <td>
-<img width=100 src="./static/images/acknowledgements/vscode.png">
+<img width=100 src="./static/images/acknowledgements/python.png">
 </td>
 
 <td>
-<img width=100 src="./static/images/acknowledgements/docker.png">
+<img width=100 src="./static/images/acknowledgements/scikit.png">
 </td>
 </tr>
 <tr>
 <td>
 <img width=100 src="./static/images/acknowledgements/slacknew.png">
 </td>
+<td>
+<img width=100 src="./static/images/acknowledgements/vscode.png">
+</td>
+<td>
+<img width=100 src="./static/images/acknowledgements/docker.png">
+</td>
+<td>
+<img width=100 src="./static/images/acknowledgements/pandas.png">
+</td>
 
 <tr>
 
 </table>
 
-
+---
 ## Acknowledgements
 
-#
-Huge thank you to CTF, Sage,  SVAI, NTAP, uuhhh, google launchpad?
+
 
 <table>
 <tr>
@@ -486,9 +443,3 @@ Huge thank you to CTF, Sage,  SVAI, NTAP, uuhhh, google launchpad?
 
 
 
----
-other thigns?
-requirements 
-install/run instructions (make sure all extra files are in the repo et cetera)
-
-talk about the NF Hackathon
