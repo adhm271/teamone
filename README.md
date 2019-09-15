@@ -20,7 +20,7 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
 
 ## Introduction *: What's the problem? Why should we solve it?*
 
-Our goal is to classify and predict responses to a drug based on features like _[X, Y, Z]_. We then aimed to correlate the drug targets with relevance in gene expression (RNA-seq) and patient genotypes (WGS) 
+Our goal is to classify and predict responses to a drug based on features like `_[X, Y, Z]_`. We then aimed to correlate the drug targets with relevance in gene expression (RNA-seq) and patient genotypes (WGS) 
 
 ## Methods *: How did we go about solving it?*
 
@@ -35,42 +35,59 @@ Our goal is to classify and predict responses to a drug based on features like _
 
 
 
-
-<img width=400 src="./static/images/tree1crop.png">
+<table>
+<tr>
+    <td>
+<img width=350 src="./static/images/tree1crop.png">
 <details>
   <summary>Expand to View Full Size! (warning: v big)</summary>
   
- <img width=400 src="./static/images/tree1.png">
+ <!-- <img width=400 src="./static/images/tree1.png"> -->
+ <img src="./static/images/tree1.png">
 </details>
 
-<img width=400 src="./static/images/tree2crop.png">
+</td>
+
+<td>
+<img width=350 src="./static/images/tree2crop.png">
 <details>
   <summary>Expand to View Full Size! (warning: v big)</summary>
   
- <img width=400 src="./static/images/tree2.png">
+ <!-- <img width=400 src="./static/images/tree2.png"> -->
+ <img src="./static/images/tree2.png">
 </details>
+</td>
+</tr>
 
-
+<tr>
+<td>
 <img width=400 src="./static/images/tree3crop.png">
 <details>
   <summary>Expand to View Full Size! (warning: v big)</summary>
   
- <img width=400 src="./static/images/tree3.png">
+ <!-- <img width=400 src="./static/images/tree3.png"> -->
+ <img src="./static/images/tree3.png">
 </details>
+</td>
 
+<td>
 
 <img width=400 src="./static/images/tree4crop.png">
 <details>
   <summary>Expand to View Full Size! (warning: v big)</summary>
   
- <img width=400 src="./static/images/tree4.png">
+ <!-- <img width=400 src="./static/images/tree4.png"> -->
+ <img width=350 src="./static/images/tree4.png">
 </details>
+</td>
+</tr>
+</table>
 
 ##### 3. Interpretint the results
->Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+>`Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. `
 
 ##### 4. Correlate the gene targets of drugs with their relevance in RNA-seq and WGS data 
->Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+>`Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia `
 
 ## Results *: What did we observe? Figures are great!*
 
