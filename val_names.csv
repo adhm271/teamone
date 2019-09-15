@@ -1,0 +1,16 @@
+,0
+0,atom_stereo_count
+1,bond_stereo_count
+2,charge
+3,complexity
+4,covalent_unit_count
+5,exact_mass
+6,h_bond_acceptor_count
+7,h_bond_donor_count
+8,heavy_atom_count
+9,isotope_atom_count
+10,molecular_weight
+11,monoisotopic_mass
+12,rotable_bond_count
+13,tpsa
+14,xlogp
