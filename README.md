@@ -222,14 +222,14 @@ Since complexity, TPSA, and XLOGP seemed like the most important features, we vi
 </td>
 </tr>
 </table>
-`
+
 __SNP Exploration__
 We investigated the SNPs for NF1 patients for the top ~50 or so drug targets when classified by AUC. There were 14 unique drug targets from the top drugs, and we plotted the skin (inner circle) cNF SNPs versus the blood (outer circle) 'normal' non-tumor SNPs.
 
 <table allign="center">
     <tr>
     <td>
-        <img alt="feature_importance" src="./static/images/snps_in_top_drug_targets.jpeg"><br><em>r2</em>
+        <img alt="snps" src="./static/images/snps_in_top_drug_targets.jpeg"><br><em>r2</em>
     </td>
     </tr>
     </table>
