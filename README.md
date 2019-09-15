@@ -204,7 +204,6 @@ We built a three-layer MLP and trained it over 100 epochs. The loss decreased an
 
 __Exploration of Data Features__
 Since complexity, TPSA, and XLOGP seemed like the most important features, we visualized how they varied with the AUC for each of the 6 cell lines, colored according to the legends in the plot.
-```
 
 <table>
 <tr>
