@@ -60,7 +60,7 @@ Modern high-throughput drug screens are useful for testing out drugs in vitro be
 
 <tr>
 <td>
-<img width=400 src="./static/images/tree3crop.png">
+<img width=350 src="./static/images/tree3crop.png">
 <details>
   <summary>Expand to View Full Size! (warning: v big)</summary>
   
@@ -71,13 +71,13 @@ Modern high-throughput drug screens are useful for testing out drugs in vitro be
 
 <td>
 
-<img width=400 src="./static/images/tree4crop.png">
+<img width=350 src="./static/images/tree4crop.png">
 <details>
   <summary>Expand to View Full Size! (warning: v big)</summary>
   
  <!-- <img width=400 src="./static/images/tree4.png"> -->
- <img width=350 src="./static/images/tree4.png">
-</details>
+ <img src="./static/images/tree4.png">
+r</details>
 </td>
 </tr>
 </table>
