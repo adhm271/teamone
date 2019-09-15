@@ -196,9 +196,12 @@ To generate this data, we combined compound/drug screens from multiple different
 
 ## Acknowledgements
 
+#
 Huge thank you to CTF, Sage,  SVAI, NTAP, uuhhh, google launchpad?
-
-
+|   |   |   |   |   |   |
+|:------:|:------:|:------:|:------:|:-------:|:------:|
+|<img width=100 src="./static/images/acknowledgements/ctf.png">|<img width=100 src="./static/images/acknowledgements/sage.png">|<img width=100 src="./static/images/acknowledgements/svai.png">|<img width=100 src="./static/images/acknowledgements/GoogleCloud.png">|<img width=100 src="./static/images/acknowledgements/GoogleLaunchpad.png">|<img width=100 src="./static/images/acknowledgements/ntap.png">|
+|<img width=100 src="./static/images/acknowledgements/healx.png">|<img width=100 src="./static/images/acknowledgements/wuxiapp.png">|<img width=100 src="./static/images/acknowledgements/wuxinext.png">|<img width=100 src="./static/images/acknowledgements/vscode.png">|<img width=100 src="./static/images/acknowledgements/docker.png">|
 
 
 ---
