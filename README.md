@@ -260,6 +260,10 @@ Instructions for running the following notebooks: *be sure to adjust these instr
 1. `docker pull <your dockerhub repo>/<this container>` command to pull the image from the DockerHub
 2. `docker run <your dockerhub repo>/<this container>` Run the docker image from the master shell script
 
+If you need to install any packages that are not intitally installed (anything imported in the notebook before you modify the code), wheither you're running your container locally or on the cloud, you have to do it from within the notebook via the esacpe charecter (e.g. "!pip install pubchempy") before you try to import it.
+
+"
+
 ### Important Resources *: primary data, github repository, Synapse project, dockerfile link etc.*
 
 
