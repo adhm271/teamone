@@ -60,7 +60,7 @@ Our goal is to classify and predict responses to a drug based on features like `
 
 <tr>
 <td>
-<img width=400 src="./static/images/tree3crop.png">
+<img width=350 src="./static/images/tree3crop.png">
 <details>
   <summary>Expand to View Full Size! (warning: v big)</summary>
   
@@ -71,12 +71,12 @@ Our goal is to classify and predict responses to a drug based on features like `
 
 <td>
 
-<img width=400 src="./static/images/tree4crop.png">
+<img width=350 src="./static/images/tree4crop.png">
 <details>
   <summary>Expand to View Full Size! (warning: v big)</summary>
   
  <!-- <img width=400 src="./static/images/tree4.png"> -->
- <img width=350 src="./static/images/tree4.png">
+ <img src="./static/images/tree4.png">
 </details>
 </td>
 </tr>
