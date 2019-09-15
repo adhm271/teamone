@@ -32,6 +32,56 @@ Modern high-throughput drug screens are useful for testing out drugs in vitro be
 ##### 2. Create off-the-shelf machine learning models as well as a simple multi-layer perceptron
 >Decision tree stuff~
 
+```python
+    #maybe put a relevant code block here?
+```
+
+<table>
+    <tr>
+    <td>
+        <img src="./static/images/regression_r2.png">
+    </td>
+    <td>
+        <img src="./static/images/regression_mae.png">
+    </td>        
+    </tr>
+    <tr>
+    <td>
+        <img src="./static/images/regression_mse.png">
+    </td>
+    <td>
+        <img src="./static/images/regression_expl_var.png">
+    </td>
+    </tr>
+    </table>
+
+
+   ```python
+
+   for whatever in whichever
+        print("maybe code?")
+   ```
+
+<table>
+    <tr>
+    <td>
+        <img src="./static/images/classification_precision.png">
+    </td>
+    <td>
+        <img src="./static/images/classification_auroc.png">
+    </td>        
+    </tr>
+    <tr>
+    <td>
+        <img src="./static/images/classification_accuracy.png">
+    </td>
+    <td>
+        <img src="./static/images/classification_f1.png">
+    </td>
+    </tr>
+
+
+</table>
 
 
 <table>
@@ -71,6 +121,8 @@ Modern high-throughput drug screens are useful for testing out drugs in vitro be
 
 <td>
 
+>RFC AUC feature importance
+
 <img width=350 src="./static/images/tree4crop.png">
 <details>
   <summary>Expand to View Full Size! (warning: v big)</summary>
@@ -87,11 +139,19 @@ Modern high-throughput drug screens are useful for testing out drugs in vitro be
 <a href="./static/images/tree8.png">trees</a>
 <br><br>
 
-<img width=500 src="./static/images/featureimportance.png">
-
-<br>
-
-<img width=500 src="./static/images/scatterrrrrr.png">
+<table>
+<tr>
+<td>
+<img src="./static/images/auc_vs_complexity.png ">
+</td>
+<td>
+<img src="./static/images/auc_vs_tpsa.png ">
+</td>
+<td>
+<img src="./static/images/auc_vs_xlogp.png">
+</td>
+</tr>
+</table>
 
 
 ##### 3. Interpretint the results
