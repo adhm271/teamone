@@ -90,7 +90,7 @@ We evaluated the R2, MAE, MSE, and Explained Variance for each KNN and Random Fo
 
 __Classification__
 We evaluated the Precision, Accuracy, auROC, and F1 Score for each KNN and Random Forest Classifier when trained to predict the class (top 50% vs bottom 50%) of the AUC and Max Response values for each of the 6 cell lines.
-   ```
+  
 
 <table>
     <tr>
