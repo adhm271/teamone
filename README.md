@@ -8,7 +8,7 @@
 <a href="https://github.com/SVAI/teamone#Reproduction">Reproduction</a> |
 <a href="https://github.com/SVAI/teamone#Members">Members</a> |
 <a href="https://github.com/SVAI/teamone#Resources">Resources</a> |
-<a href="https://github.com/SVAI/teamone#Tools">Tools</a> |
+<a href="https://github.com/SVAI/teamone#Tools">Tools</a> | 
 <a href="https://github.com/SVAI/teamone#Acknowledgements">Acknowledgements </a>
 |
 
@@ -261,6 +261,58 @@ We investigated the SNPs for NF1 patients for the top ~50 or so drug targets whe
     </td>
     </tr>
     </table>
+
+__Merged Dataframes__
+
+>merging parsed drug chemical properties arrays with AUC and max responses to dataframe
+
+<table>
+<tr>
+<td>
+<img src="./static/images/merged_df.png">
+</td>
+<td>
+<img src="./static/images/max_responses.png">
+</td>
+</table>
+
+__clustering__
+
+>Observing at testing results features.....performing k-means clustering (3-clusters again)  AUC and max response and plotting on AUC vs. max response. Three distinct clusters of drugs are seen.  Can use this segmentation to see what features are most important in these clusters.
+
+>k -means clustering (3-clusters) on every numerical property (excluding drug name or drug id). Plotting on average AUC vs. average max response. Very messy and overlapped, need to do feature selection.
+
+<table>
+<tr>
+<td>
+<img src="./static/images/k_means_numerical_prop.png">
+</td>
+<td>
+<img src="./static/images/testing_result_features.png">
+</td>
+</table>
+
+__ranges__
+
+>ranges of each top parameter (xlogp, tpsa, and complexity) for each cluster (yellow turned to orange for visibility). There's a lot of overlap, but the affective drugs have a smaller more distinctive, less noisy range.
+
+
+<table>
+<tr>
+<td>
+<img src="./static/images/tpsa_drug_measures.png ">
+</td>
+<td>
+<img src="./static/images/xlogp_drug_measures.png">
+</td>
+<td>
+<img src="./static/images/complexity_drug_measures.png">
+</td>
+</table>
+
+
+
+
 
 ---
 
