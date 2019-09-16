@@ -1,27 +1,49 @@
-# HACKNF2 – teamone
+##### Contents
+|
+<a href="https://github.com/SVAI/teamone#Abstract">Abstract</a> | 
+<a href="https://github.com/SVAI/teamone#Introduction">Introduction</a> |
+<a href="https://github.com/SVAI/teamone#Methods">Methods</a> |
+<a href="https://github.com/SVAI/teamone#Results">Results</a> |
+<a href="https://github.com/SVAI/teamone#Conclusion">Conclusion</a> |
+<a href="https://github.com/SVAI/teamone#Reproduction">Reproduction</a> |
+<a href="https://github.com/SVAI/teamone#Members">Members</a> |
+<a href="https://github.com/SVAI/teamone#Resources">Resources</a> |
+<a href="https://github.com/SVAI/teamone#Tools">Tools</a> | 
+<a href="https://github.com/SVAI/teamone#Acknowledgements">Acknowledgements </a>
+|
 
-
-## ICMJE Standard Citation:
-
-### Link to the DOI:  <link>
-
-<!-- ## Awesome Logo *(if applicable)* -->
-
-<img src="./static/images/templogo.png">
+<center><img src="./static/images/templogo.gif"></center>
 
 ---
 
-## Abstract 
+<div align="right">
+    <b><a href="#contents">↥ </a></b>
+</div>
 
-To understand the results from the drug screening data, we wanted to see if any chemical or structural properties of the drugs themselves correlated with the screening. We analyzed features from ~1750 of the molecules in the screen via PubChem, exploring properties such as molecular weight, number of hydrogen bonds, total polar surface area, etc. We then used several off-the-shelf classifiers from sklearn, such as a Random Forest Classifier and KNN Classifier, to identify salient features and the predictive property of these molecules. We also looked at a very simple multi-layer perceptron to try to get an increased accuracy. These models were engineered for both regression and classification, with an improvement in accuracy in the classification models. The most important features of drugs contributing to differential AUC and Maximum Response were total polar surface area (TPSA), complexity, and xlogp. Finally, we extended the drug screening data to the top genes targeted by the highest-performing drugs, finding xxx in RNA-seq and xxx in WGS.
+## Abstract  
+
+
+To understand the results from the drug screening data, we wanted to see if any chemical or structural properties of the drugs themselves correlated with the screening. We analyzed features from ~1750 of the molecules in the screen via PubChem, exploring properties such as molecular weight, number of hydrogen bonds, total polar surface area, etc. We then used several off-the-shelf classifiers from sklearn, such as a Random Forest Classifier and KNN Classifier, to identify salient features and the predictive property of these molecules. We also looked at a very simple multi-layer perceptron to try to get an increased accuracy. These models were engineered for both regression and classification, with an improvement in accuracy in the classification models. The most important features of drugs contributing to differential AUC and Maximum Response were total polar surface area (TPSA), complexity, and xlogp. Finally, we extended the drug screening data to the top genes targeted by the highest-performing drugs, finding that out of 25 genes targeted by top drugs, 23/25 had total counts >1000 in an RNA-seq data set of mixed NF1/NF2 patients. We also looked at differential SNP composition in cutaneous neurofibroma (cNF) and matched blood (normal) samples for NF2 patients.
 
 ---
 
-## Introduction:
+<div align="right">
+    <b><a href="#contents">↥ </a></b>
+</div>
+
+## Introduction: 
+
 
 Modern high-throughput drug screens are useful for testing out drugs in vitro before executing more expensive, resource-intensive animal trials or human clinical trials. However, drug screen data is not always robust, and difficulties arise in translating results from the dish to an in vivo model. Given these challenges, we were interested in understanding if the chemical or structural properties of the drugs were driving their in vitro measured response. Since we wanted to classify and predict responses to a drug based on features like molecular weight and polarity, we looked at how these features correlated with the predictive ability of the three models we used. We then aimed to correlate the drug targets with relevance in gene expression (RNA-seq) and patient genotypes (WGS). 
 
+---
+
+<div align="right">
+    <b><a href="#contents">↥ </a></b>
+</div>
+
 ## Methods:
+
 
 ##### 1. We looked at screening data across 1784 molecules and 6 different cell lines.
 
@@ -65,10 +87,16 @@ MLP: Three fully connected layers were built, with 15, 10, and 6 nodes, respecti
 
 
 ##### 4. Correlate the gene targets of drugs with their relevance in genomic data
+We looked at 25 genes targeted by the top drugs when stratified according to AUC in 6 NF2 deficient cell lines. For these genes, we looked at the different RNA-seq transcript counts in a mixed dataset of NF1 and NF2 patients. We also looked at 13 of these genes to find all associated SNPs from the whole genome sequencing (WGS) dataset of NF1 patients, by looking at the nunber of SNPs in both cutaneous neurofibromas (cNFs) and the matched normal blood samples.
 
 ---
 
+<div align="right">
+    <b><a href="#contents">↥ </a></b>
+</div>
+
 ## Results:
+
 
 __Regression__
 We evaluated the R2, MAE, MSE, and Explained Variance for each KNN and Random Forest Classifier when trained to predict the continuous AUC and Max Response values for each of the 6 cell lines.
@@ -233,42 +261,101 @@ We investigated the SNPs for NF1 patients for the top ~50 or so drug targets whe
     </td>
     </tr>
     </table>
+
+__Merged Dataframes__
+
+>merging parsed drug chemical properties arrays with AUC and max responses to dataframe
+
+<table>
+<tr>
+<td>
+<img src="./static/images/merged_df.png">
+</td>
+<td>
+<img src="./static/images/max_responses.png">
+</td>
+</table>
+
+__clustering__
+
+>Observing at testing results features.....performing k-means clustering (3-clusters again)  AUC and max response and plotting on AUC vs. max response. Three distinct clusters of drugs are seen.  Can use this segmentation to see what features are most important in these clusters.
+
+>k -means clustering (3-clusters) on every numerical property (excluding drug name or drug id). Plotting on average AUC vs. average max response. Very messy and overlapped, need to do feature selection.
+
+<table>
+<tr>
+<td>
+<img src="./static/images/k_means_numerical_prop.png">
+</td>
+<td>
+<img src="./static/images/testing_result_features.png">
+</td>
+</table>
+
+__ranges__
+
+>ranges of each top parameter (xlogp, tpsa, and complexity) for each cluster (yellow turned to orange for visibility). There's a lot of overlap, but the affective drugs have a smaller more distinctive, less noisy range.
+
+
+<table>
+<tr>
+<td>
+<img src="./static/images/tpsa_drug_measures.png ">
+</td>
+<td>
+<img src="./static/images/xlogp_drug_measures.png">
+</td>
+<td>
+<img src="./static/images/complexity_drug_measures.png">
+</td>
+</table>
+
+
+
+
+
 ---
 
-## Conclusion/Discussion: 
+<div align="right">
+    <b><a href="#contents">↥ </a></b>
+</div> 
 
-### Please make sure you address ALL of the following:
+## Conclusion
 
-#### *1. What additional data would you like to have*
+In conclusion, we made three simple models to predict and classify the drug performance on 6 cell lines. To expand the investigation and improve the accuracy, we would want the following additional data: 
 
-#### *2. What are the next rational steps?* 
+1) more cell lines- we only used data from 6 cell lines here, all NF2 deficient; 
 
-#### *3. What additional tools or pipelines will be needed for those steps?*
+2) more drug structural information- it would be interesting to identify other features, such as one-hot encode the drug structure, and include data from additional databases outside of PubChem
 
-#### *4. What skills would additional collaborators ideally have?*
+3) more performance metrics- we only measured the AUC and maximum response, but we would also want to explore AC50 and cell proliferation in these assays
+
+Additionally, we only had genotype information from NF1 patients, and the drugs were screened on NF2 deficient cell lines. We are aware of this limitation, but the analysis could be expanded to whole genome sequencing information from NF2 patients when available. 
+
+The next rational steps would be to expand the scope of this analysis. Given more time, we would want to more directly correlate the drug targets with their performance in the screens, and do a pathway analysis of each drug target. Furthermore, it would be interesting to access the genotypes of the cell lines to see if differential performance on different cell lines is affected by any explicit genotype information. 
+
+Our ideal pipeline would take a full set of 38 cell lines tested with all ~1950 drugs, with many different measured outputs. We would take this dataset and for each drug, extract as many structural features as possible, from the chemical formula of the drug to its solubility. Then, we would test the features' predictive abilities via several different models, possibly using an ensemble model to incorporate the different advantages of the models. Our ideal collaborator would have the ability to generate an expanded dataset as well as collect WGS information from NF2 patients. 
 
 ---
+
+<div align="right">
+    <b><a href="#contents">↥ </a></b>
+</div>
 
 ## Reproduction:
 
+Run the jupyter notebooks in the github. All data extraction, visualization, and modeling scripts are included. Do note that the PubChemPy drug information extraction takes a long time to run.
+
 ### Docker
 
-*The Docker image contains <R/jupyter> notebooks of all analyses and the dependencies to run them. *Be sure to note if you need any special credentials to access data for these analyses, **don't package restricted data** in your containers!*
-
-Instructions for running the following notebooks: *be sure to adjust these instructions as necessary! check out https://github.com/Sage-Bionetworks/nf-hackathon-2019 for example containers and instructions*
-
-1. `docker pull <your dockerhub repo>/<this container>` command to pull the image from the DockerHub
-2. `docker run <your dockerhub repo>/<this container>` Run the docker image from the master shell script
-
+We uploaded this data and these notebooks to a docker. The docker will be uploaded to dockerhub shortly.
 If you need to install any packages that are not intitally installed (anything imported in the notebook before you modify the code), wheither you're running your container locally or on the cloud, you have to do it from within the notebook via the esacpe charecter (e.g. "!pip install pubchempy") before you try to import it.
 
-"
-
-### Important Resources *: primary data, github repository, Synapse project, dockerfile link etc.*
-
-
 ---
-## members
+
+
+## Members
+
 
 
 
@@ -326,8 +413,8 @@ If you need to install any packages that are not intitally installed (anything i
 </td>
 
 <td>
-<a href="https://github.com/AAR0NM">
-@AAR0NM 
+<a href="https://github.com/adhm271">
+@adhm271 
 </a>
 </td>
 
@@ -361,9 +448,7 @@ Aaron M
 
 <td>
 Joe B Virtual
-
 </td>
-
 </tr>
 
 
@@ -374,14 +459,28 @@ Joe B Virtual
 
 
 ---
-## references
+
+<div align="right">
+    <b><a href="#contents">↥ </a></b>
+</div>
+
+## Resources
 
 
 The Datasets used for the analyses described in this manuscript were generated by the Synodos-NF2 consortium and obtained through the consortium data portal on Synapse at <a href="https://www.synapse.org/#!Synapse:syn2343195/wiki/400317">syn2343195</a>. The consortium was funded by <a href="http://www.ctf.org/">Children's Tumor Foundation</a> (CTF)
 
+
+Kim S, Chen J, Cheng T, Gindulyte A, He J, He S, Li Q, Shoemaker BA, Thiessen PA, Yu B, Zaslavsky L, Zhang J, Bolton EE. PubChem 2019 update: improved access to chemical data. Nucleic Acids Res. 2019 Jan 8; 47(D1):D1102-1109. doi:10.1093/nar/gky1033. [PubMed PMID: 30371825] 
+
 ---
 
-## Tools Used
+<div align="right">
+    <b><a href="#contents">↥ </a></b>
+</div>
+
+## Tools 
+
+
 <table>
 <tr>
 <td>
@@ -412,45 +511,58 @@ The Datasets used for the analyses described in this manuscript were generated b
 <img width=100 src="./static/images/acknowledgements/pandas.png">
 </td>
 
-<tr>
+</tr>
 
+<tr>
+<td>
+<img width=100 src="./static/images/acknowledgements/dplyr.png">
+</td>
+<td>
+<img width=100 src="./static/images/acknowledgements/rstudio.png">
+
+</td>
 </table>
 
 ---
-## Acknowledgements
 
+<div align="right">
+    <b><a href="#contents">↥ </a></b>
+</div>
+
+## Acknowledgements 
+
+
+Thank you so much for all parties that made this hackathon possible! 
 
 
 <table>
 <tr>
 <td>
-<img width=100 src="./static/images/acknowledgements/ctf.png">
+<a href="https://www.ctf.org/"><img width=100 src="./static/images/acknowledgements/ctf.png"></a>
 </td>
 <td>
-<img width=100 src="./static/images/acknowledgements/sage.png">
+<a href="https://sagebionetworks.org/"><img width=100 src="./static/images/acknowledgements/sage.png"></a>
 </td>
 <td>
-<img width=100 src="./static/images/acknowledgements/svai.png">
+<a href="https://sv.ai/"><img width=100 src="./static/images/acknowledgements/svai.png"></a>
 </td>
 <td>
-<img width=100 src="./static/images/acknowledgements/ntap.png">|
+<a href="http://www.n-tap.org/"><img width=100 src="./static/images/acknowledgements/ntap.png"></a>
 </td>
 </tr>
 <td>
-<img width=100 src="./static/images/acknowledgements/GoogleLaunchpad.png">
+<a href="https://developers.google.com/community/launchpad/"><img width=100 src="./static/images/acknowledgements/GoogleLaunchpad.png"></a>
 </td>
 <td>
-<img width=100 src="./static/images/acknowledgements/GoogleCloud.png">
+<a href="https://healx.io/"><img width=100 src="./static/images/acknowledgements/healx.png"></a>
 </td>
 <td>
-<img width=100 src="./static/images/acknowledgements/healx.png">
-</td>
-<td>
-<img width=100 src="./static/images/acknowledgements/wuxiapp.png">
+<a href="https://www.wuxiapptec.com/"><img width=100 src="./static/images/acknowledgements/wuxiapp.png"></a>
 </td>
 </tr>
 
 </table>
+
 
 
 
